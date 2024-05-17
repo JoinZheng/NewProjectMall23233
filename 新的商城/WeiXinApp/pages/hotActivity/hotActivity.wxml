@@ -1,0 +1,22 @@
+<van-search placeholder="请输入搜索商品名称" use-action-slot shape="round" bind:search="onSearch">
+  <view slot="action" bind:tap="onClick">∨按圈子</view>
+</van-search>
+<view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" wx:key="list">
+  <van-row>
+    <van-col span="5">
+      <image src="{{item.imagePath}}"></image>
+    </van-col>
+    <van-col span="19">
+      <view class="text"> {{item.text}} </view>
+      <view class="time">
+        <van-row>
+          <van-col span="18">
+            <van-tag color="#ffffff" text-color="#353535" plain size="medium">发布圈子</van-tag>
+            <van-tag color="#3981F4" size="medium">{{item.tit}}</van-tag>
+          </van-col>
+          <van-col span="6">{{item.time}}</van-col>
+        </van-row>
+      </view>
+    </van-col>
+  </van-row>
+</view>

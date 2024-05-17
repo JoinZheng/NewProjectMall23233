@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管系统框架</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+
+<link rel="Bookmark" href="static/images/logo.jpg">
+<link rel="Shortcut Icon" href="static/images/logo.jpg">
+
+<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
+
+<title>新增</title>
+
+<body >
+
+<div class="fm">
+<form class="needs-validation" id="formAdd" action="#" method="post">
+    <div class="fm-header">
+        <h2 class="title">新增表单</h2>
+    </div>
+    <div class="fm-body">
+        <div class="divBorder">
+            <div class="panel-body collapse in" id="customerPanel">
+                <div class="input-group">
+                    <label class="input-group-text bitian">姓名</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="customerName" placeholder="姓名" required>
+                    </div>
+                    <label class="input-group-text">入住房号</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="inRoomNum" placeholder="入住房号">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label  class="input-group-text bitian">入住协议</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="agreementNum" placeholder="入住协议" required>
+                    </div>
+                    <label class="input-group-text bitian">签单金额</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control"  name="agreementMoney" placeholder="0.00" required>
+                    </div>
+                </div>
+
+
+                <div class="input-group">
+                    <label class="input-group-text">籍贯</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="nativePlace" placeholder="籍贯">
+                    </div>
+                    <label class="input-group-text bitian">国籍</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="cNation" placeholder="国籍" value="中国" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">房型</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="roomType" placeholder="房型">
+                    </div>
+
+                    <label class="input-group-text">入住天数</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="agreementInDays" placeholder="协议入住天数" value="30">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text bitian">入室时间</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control date form_datetime" name="inDate" placeholder="入室时间" required>
+                    </div>
+
+                    <label class="input-group-text bitian">离室时间</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control date form_datetime" name="outDate" placeholder="离室时间" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">实住天数</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="actualInDays" placeholder="实住天数">
+                    </div>
+
+                    <label class="input-group-text bitian">手机号</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="PhoneNum" placeholder="手机号">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">电子邮箱</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="email" placeholder="电子邮箱">
+                    </div>
+
+                    <label class="input-group-text">微信</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="qqNum" placeholder="微信">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">生日</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control date form_date" name="birthday" placeholder="生日">
+                    </div>
+
+                    <label class="input-group-text bitian">身份证</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="idCard" placeholder="身份证" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">证件地址</label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" name="idCardAddr" placeholder="证件地址">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">住址</label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" name="addr" placeholder="住址">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">工作单位</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="workUnit" placeholder="工作单位">
+                    </div>
+
+                    <label class="input-group-text">职业</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="profession" placeholder="职业">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">民族</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="nation" placeholder="民族">
+                    </div>
+
+                    <label class="input-group-text">宗教</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="religion" placeholder="宗教">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">文化程度</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="education" placeholder="文化程度">
+                    </div>
+
+                    <label class="input-group-text">婚姻状况</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="marriage" placeholder="婚姻状况">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divBorder">
+            <h4 class="panel panel-heading h4font">
+                <a class="btn btn-primary " data-toggle="collapse"
+                   data-target="#babyPanel">宝宝信息
+                </a>
+            </h4>
+            <input type="hidden" name="babyId"/>
+            <div class="panel-body collapse" id="babyPanel">
+                <div class="input-group">
+                    <label class="input-group-text bitian">宝宝姓名</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="babyName" placeholder="宝宝姓名">
+                    </div>
+                    <label class="input-group-text">乳名</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="babyBornName" placeholder="乳名">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text bitian">宝宝性别</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="sex" placeholder="宝宝性别">
+                    </div>
+                    <label class="input-group-text">血型</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="babyBloodType" placeholder="血型">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">宝宝生日</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control date form_date" name="babyBirthday"
+                               placeholder="生日">
+                    </div>
+                    <label class="input-group-text">出生时间</label>
+
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control date form_datetime" name="babyBornTime" placeholder="出生时间">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">出生体重</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="bornWeight" placeholder="出生体重g">
+                    </div>
+                    <label class="input-group-text">出生身高</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="bornHeight" placeholder="出生身高cm">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">入室体重</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="inRoomWeight" placeholder="入室体重">
+                    </div>
+                    <label class="input-group-text">离室体重</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="outRoomWeight" placeholder="离室体重">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">饮食情况</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="eatStatus" placeholder="饮食情况">
+                    </div>
+                    <label class="input-group-text">入室情况</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="inRoomStatus" placeholder="入室情况">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divBorder">
+            <h4 class="panel panel-heading h4font">
+                <a class="btn btn-primary " data-toggle="collapse"
+                   data-target="#extraPanel">附加信息
+                </a>
+            </h4>
+            <input type="hidden" name="familyId"/>
+            <div class="panel-body collapse" id="extraPanel">
+                <div class="input-group">
+                    <label class="input-group-text bitian">家属姓名</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation1" placeholder="家属姓名">
+                    </div>
+                    <label class="input-group-text bitian">家属关系</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation1Be" placeholder="家属关系">
+                    </div>
+                    <label class="input-group-text">联系电话</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation1Phone" placeholder="联系电话">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text bitian">家属姓名</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation2" placeholder="家属姓名">
+                    </div>
+                    <label class="input-group-text">家属关系</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation2Be" placeholder="家属关系">
+                    </div>
+                    <label class="input-group-text bitian">联系电话</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation2Phone" placeholder="联系电话">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">家属姓名</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation3" placeholder="家属姓名">
+                    </div>
+                    <label class="input-group-text">家属关系</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation3Be" placeholder="家属关系">
+                    </div>
+                    <label class="input-group-text">联系电话</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name="relation3Phone" placeholder="联系电话">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-text">备注</label>
+                    <div class="col-sm-12">
+                        <textarea class="form-control" placeholder="家属姓名"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fm-footer">
+        <div class="col-sm-1">
+            <button type="submit" class="btns btc9">保存</button>
+            <button type="reset" class="btns btc8">取消</button>
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="static/js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="static/js/dateTime/jquery-ui.min.js"></script>
+<script type="text/javascript" src="static/js/dateTime/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="static/js/dateTime/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="static/js/dateTime/jquery-ui-timepicker-zh-CN.js"></script>
+<script type="text/javascript" type="text/javascript">
+
+    $(document).ready(function() {
+
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+
+
+        $('#formAdd').bootstrapValidator({
+
+            message: '该值无效!',
+            feedbackIcons: {/*输入框不同状态，显示图片的样式*/
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields:{
+                customerName: {/*键名username和input name值对应*/
+                    message: 'The customer is not valid',
+                    validators: {
+                        notEmpty: {/*非空提示*/
+                            message: '用户名不能为空'
+                        },
+                        stringLength: {/*长度提示*/
+                            min: 6,
+                            max: 30,
+                            message: '用户名长度必须在6到30之间'
+                        }
+                    }
+                },
+
+                agreementMoney:{
+                    message:'无效的输入',
+                    validators:{
+                        notEmpty:{
+                            message:'金额不能为空'
+                        },
+                        regexp: {
+                            regexp: /^(([1-9]+)|([0-9]+\.[0-9]{1,2}))$/,
+                            message: '必须是金额,例如：2000.12。'
+                        }
+
+                    }
+                }
+            }
+        });
+
+        $('.form_datetime').datepicker({
+            changeYear:true,
+            changeMonth:true,
+            yearRange:"c-100:c+10",
+        });
+        $('.form_date').datepicker({
+            changeYear:true,
+            changeMonth:true,
+            yearRange:"c-100:c+10",
+        });
+        $('.form_time').datepicker({
+            changeYear:true,
+            changeMonth:true,
+            yearRange:"c-100:c+10",
+        });
+    });
+</script>
+</div>
+
+</body>
+</html>

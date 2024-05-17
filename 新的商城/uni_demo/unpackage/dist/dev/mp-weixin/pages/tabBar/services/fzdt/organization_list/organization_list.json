@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "法律机构",
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag"
+  }
+}

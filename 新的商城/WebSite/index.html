@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>商城</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--要求当前网页使用IE浏览器最高版本的内核来渲染-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!--视口的设置：视口的宽度和设备一致，默认的缩放比例和PC端一致，用户不能自行缩放-->
+    <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
+    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="images/favicon32.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="jqueryplus/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .carousel-indicators {
+            position: absolute;
+            bottom: 140px;
+            left: 45%;
+            z-index: 15;
+            padding-left: 0;
+            text-align: center;
+            list-style: none;
+            border-top: 1px solid #fff;
+            width: 68.9%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .carousel-indicators li {
+                display: inline-block;
+                width: 11.8rem !important;
+                height: 0.05rem !important;
+                margin: -1px 1px;
+                text-indent: -999px;
+                cursor: pointer;
+                background-color: #000\9;
+                background-color: rgba(0,0,0,0);
+                border: 0px solid #fff;
+                border-radius: 0px;
+                margin-top:2px;
+            }
+
+            .carousel-indicators .active {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                background-color: #fff;
+                border: 0px solid #fff;
+                border-top: 2px solid #fff;
+                border-radius: 0px;
+            }
+
+            .carousel-indicators li div {
+                color: #fff;
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                margin-top: 0.5rem;
+                text-align: right;
+                padding-right: 65px;
+            }
+
+        .carousel-div {
+            width: 210px;
+            height: 358px;
+            top: 23px;
+            left: 22px;
+        }
+    </style>
+</head>
+<body>
+    <!--滚动标题-->
+    <div class="wrap">
+        <div class="up">
+            <div class="TopMenu">
+                <div class="title">
+                    <div class="name" style="margin-right:17rem;">
+                        <div class="name_text"></div>
+                    </div>
+                    <div class="tab">
+                        <div class="tab-item">
+                            <a href="javascript:void(0)" class="active">首页</a>
+                        </div>
+                        <div class="tab-item">
+                            <div class="dropdown">
+                                <a href="pages/tuhuaboutus.html" class="dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">关于我们</a>
+                                <ul class="dropdown-menu" style="top:68%;left:-48px;" role="menu" aria-labelledby="dropdownMenu">
+                                    <li>
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="pages/tuhuaboutus.html#introduction">公司概况</a>
+                                    </li>
+                                    <li>
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="pages/tuhuaboutus.html#culture">公司文化</a>
+                                    </li>
+                                    <li>
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="pages/tuhuaboutus.html#team-manage">管理团队</a>
+                                    </li>
+                                    <li>
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="pages/tuhuaboutus.html#process">发展历程</a>
+                                    </li>
+                                    <li>
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="pages/tuhuaboutus.html#honor">公司荣誉</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <a href="pages/business.html">业务介绍</a>
+                        </div>
+                        <div class="tab-item">
+                            <a href="pages/news.html">新闻中心</a>
+                        </div>
+                        <div class="tab-item">
+                            <div class="dropdown">
+                                <a href="pages/contactus.html" class="dropdown-toggle" id="dropdownMenuUs" data-toggle="dropdown">联系我们</a>
+                                <ul class="dropdown-menu" style="top:68%;left:-48px;" role="menu" aria-labelledby="dropdownMenuUs">
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="pages/contactus.html">办公地点</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" target="_blank" tabindex="-1" href="pages/workShop.html">合作加盟</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-item" style="padding-left: 1.5rem;">
+                            <div id="divCn" style="display: inline-block;" onclick="textChange('cn')">
+                                <a>简</a>
+                            </div>
+                            <span class="line-a"> / </span>
+                            <div id="divCf" class="langText" style="display: inline-block;" onclick="textChange('cf')">
+                                繁
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--swiper-->
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">
+                        <div>换轮胎</div>
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="1">
+                        <div>做保养</div>
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="2">
+                        <div>去美容</div>
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="3">
+                        <div>买车品</div>
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="4">
+                        <div>蓄电池</div>
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="5">
+                        <div>新能源</div>
+                    </li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/index/swiper1.png" />
+                    </div>
+                    <div class="item">
+                        <img src="images/index/swiper2.png" />
+                    </div>
+                    <div class="item">
+                        <img src="images/index/swiper3.png" />
+                    </div>
+                    <div class="item">
+                        <img src="images/index/swiper4.png" />
+                    </div>
+                    <div class="item">
+                        <img src="images/index/swiper5.png" />
+                    </div>
+                    <div class="item">
+                        <img src="images/index/swiper6.png" />
+                    </div>
+                </div>
+            </div>
+            <!--背景图片-->
+            <div class="new-bags">
+                <div class="new-bags-title">
+                    <div class="title-l">养车就是加盟</div>
+                    <div class="title-m">正品保障 · 智能适配 · 标准服务 · 类目齐全</div>
+                </div>
+                <div class="qrcode">
+                    <div class="qr-gift">
+                        <img src="images/index/xuser.png" />
+                    </div>
+                    <div class="qrcode-content">
+                        <img class="code" src="images/index/erweima.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="photo-model">
+                    <div id="photoCarousel" class="carousel slide carousel-div">
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/index/swiper-p1.png" />
+                            </div>
+                            <div class="item">
+                                <img src="images/index/swiper-p2.png" />
+                            </div>
+                            <div class="item">
+                                <img src="images/index/swiper-p3.png" />
+                            </div>
+                            <div class="item">
+                                <img src="images/index/swiper-p4.png" />
+                            </div>
+                            <div class="item">
+                                <img src="images/index/swiper-p5.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--宗旨-->
+        <div class="summary">
+            <div class="summary-item">
+                <div class="item-img">
+                    <img src="images/index/zpdj.png" />
+                </div>
+                <div class="title">正品低价</div>
+                <div class="subTitle">各大厂商直接供货</div>
+            </div>
+            <div class="summary-item">
+                <div class="item-img">
+                    <img src="images/index/kswl.png" />
+                </div>
+                <div class="title">快速物流</div>
+                <div class="subTitle">多地分仓发货</div>
+            </div>
+            <div class="summary-item">
+                <div class="item-img">
+                    <img src="images/index/zymd.png" />
+                </div>
+                <div class="title">专业门店</div>
+                <div class="subTitle">上万家门店专业技师团队</div>
+            </div>
+            <div class="summary-item">
+                <div class="item-img">
+                    <img src="images/index/dxfw.png" />
+                </div>
+                <div class="title">贴心服务</div>
+                <div class="subTitle">一站式服务售后保障</div>
+            </div>
+            <div class="summary-item">
+                <div class="item-img">
+                    <img src="images/index/zykb.png" />
+                </div>
+                <div class="title">卓越口碑</div>
+                <div class="subTitle">赢得消费者千万卓越口碑</div>
+            </div>
+        </div>
+
+        <!--友情链接-->
+        <div class="bottom-link">
+            <div class="first-line">
+                <div>
+                    <div>
+                        <span class="name">友情链接:</span>
+                        <a target="_self" href="https://hjxt.cca.cn/" class="item">中国消费者协会和解监督平台</a>
+                        <a target="_self" href="https://51gt3.com/" class="item">51GT3二手赛车交易</a>
+                        <a target="_self" href="https://test.smzdm.com/" class="item">消费众测</a>
+                        <a target="_self" href="https://car.tuhu.cn/" class="item">二手车交易</a>
+                        <a target="_self" href="https://db.auto.sina.com.cn/photo/" class="item">汽车图片</a>
+                        <a target="_self" href="http://shanghai.liebiao.com/shenghuo/" class="item">上海生活服务</a>
+                        <a target="_self" href="http://www.gaotie.cn/dingpiao/" class="item">铁路网上订票官网</a>
+                        <a target="_self" href="https://car.tom.com/" class="item">TOM汽车</a>
+                        <a target="_self" href="https://www.hupu.com/" class="item">虎扑网</a>
+                        <a target="_self" href="https://shanghai.baixing.com/" class="item">百姓网</a>
+                        <a target="_self" href="https://www.xcar.com.cn/" class="item">爱卡汽车</a>
+                    </div>
+                    <div>
+                        <a target="_self" href="https://www.pcauto.com.cn/" class="item">太平洋汽车网</a>
+                        <a target="_self" href="https://www.yiche.com/" class="item">易车网</a>
+                        <a target="_self" href="https://auto.sohu.com/" class="item">搜狐汽车</a>
+                        <a target="_self" href="https://auto.163.com/" class="item">网易汽车</a>
+                        <a target="_self" href="https://db.auto.sina.com.cn/" class="item">新浪汽车</a>
+                        <a target="_self" href="https://new.qq.com/ch/auto/" class="item">腾讯汽车</a>
+                        <a target="_self" href="https://www.ftwheels.cn/" class="item">丰途轮毂</a>
+                        <a target="_self" href="https://www.qipeilong.cn/Parties/html/" class="item">汽配龙</a>
+                        <a target="_self" href="https://www.dongchedi.com/" class="item">懂车帝</a>
+                        <a target="_self" href="https://www.chooseauto.com.cn/" class="item">选车网</a>
+                    </div>
+                </div>
+            </div>
+            <div class="second-line">
+                <span class="item"><span>©️ 2007-2023 Tuhu.cn Corporation，All Rights Reserved 上海阑途信息技术有限公司 版权所有</span></span>
+                <span class="item"><span>地址：上海市闵行区宜山路1999号24幢8F</span></span>
+                <span class="item"><a target="_blank" href="javascript:void()">合作加盟</a></span>
+            </div>
+            <div class="third-line">
+                <span class="item"><a target="_blank" href="https://beian.miit.gov.cn/">沪ICP备17032489号-3</a></span>
+                <span class="item"><a target="_blank" href="/home/license">营业执照</a></span>
+                <span class="item"><a target="_blank" href="javascript:void()">隐私政策</a></span>
+                <span class="item"><a target="_blank" href="javascript:void()">沪公网安备 31011202001045号</a></span>
+                <span class="item"><span>增值电信业务经营许可：沪通信管自贸[2022]7号</span></span>
+            </div>
+            <div class="last-line">
+                <span class="item">
+                    加盟客服热线：952688
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="jqueryplus/mainJS.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#myCarousel').carousel();
+            $('#photoCarousel').carousel();
+        });
+    </script>
+</body>
+</html>

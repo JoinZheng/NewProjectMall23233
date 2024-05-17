@@ -1,0 +1,64 @@
+<image class="headerImg" src="../../assets/images/banner.jpg">
+</image>
+<view class="title">
+  <van-row>
+    <van-col span="20">
+      发起得活动
+    </van-col>
+    <van-col span="4">
+      <view class="more">>更多</view>
+    </van-col>
+  </van-row>
+</view>
+<view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" wx:key="list">
+  <van-row>
+    <van-col span="5">
+      <image src="{{item.imagePath}}"></image>
+    </van-col>
+    <van-col span="19">
+      <view class="text"> {{item.text}} </view>
+      <view class="time">
+        <van-row>
+          <van-col span="18">
+            <van-tag color="#ffffff" text-color="#353535" plain size="medium">发布圈子</van-tag>
+            <van-tag color="#B81B22" size="medium">{{item.tit}}</van-tag>
+          </van-col>
+          <van-col span="6">{{item.time}}</van-col>
+        </van-row>
+      </view>
+    </van-col>
+  </van-row>
+</view>
+<view class="title">
+  <van-row>
+    <van-col span="20">
+      圈子资讯
+    </van-col>
+    <van-col span="4">
+      <view class="more">>更多</view>
+    </van-col>
+  </van-row>
+</view>
+<view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" wx:key="list">
+  <van-row>
+    <van-col span="5">
+      <image src="{{item.imagePath}}"></image>
+    </van-col>
+    <van-col span="19">
+      <view class="text"> {{item.text}} </view>
+      <view class="time">
+        <van-row>
+          <van-col span="18">
+            <van-tag color="#ffffff" text-color="#353535" plain size="medium">发布圈子</van-tag>
+            <van-tag color="#B81B22" size="medium">{{item.tit}}</van-tag>
+          </van-col>
+          <van-col span="6">{{item.time}}</van-col>
+        </van-row>
+      </view>
+    </van-col>
+  </van-row>
+</view>
+<view class="title">
+  <van-button color="#B81B22" size="large">加入圈子</van-button>
+</view>
+<view class="bottomHeight"></view>

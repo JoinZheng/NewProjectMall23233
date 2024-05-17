@@ -1,0 +1,21 @@
+<template name="fbd7ed32">
+  <view class="_view data-v-38d949b4">
+    <view class="_view data-v-38d949b4 uni-center">
+      <image class="_image data-v-38d949b4 image" style="width: 100%;height: 360rpx;" mode src="../../../static/title_bg.jpg"></image>
+    </view>
+    <view class="_view data-v-38d949b4 uni-list">
+      <view class="_view data-v-38d949b4 uni-list-cell" hover-class="uni-list-cell-hover" wx:key="key" key="{{key}}" bindtap="handleProxy" data-eventid="{{'vIf-0-'+key}}" data-comkey="{{$k}}" wx:for="{{listData}}" wx:for-index="key" wx:for-item="value">
+        <view class="_view data-v-38d949b4 uni-media-list">
+          <image class="_image data-v-38d949b4 uni-media-list-logo" src="{{value.icon}}"></image>
+          <view class="_view data-v-38d949b4 uni-media-list-body">
+            <view class="_view data-v-38d949b4 uni-media-list-text-top">{{value.title}}</view>
+            <view class="_view data-v-38d949b4 uni-media-list-text-bottom">
+              <text class="_text data-v-38d949b4">{{value.moduleName}}</text>
+              <text class="_text data-v-38d949b4">{{value.createTime}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,76 @@
+<view>
+  <view class="bannerList">
+    <swiper interval="4000" indicator-dots="true" circular autoplay>
+      <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <image class="targetImg" src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="hotAction">
+    <image src="../../assets/images/hotShape.png"></image>
+  </view>
+  <view class="hotList">
+    <scroll-view scroll-x="true">
+      <van-transition show="{{ show }}" name="" duration="{{ { enter: 3000, leave: 1000 } }}" enter-class="van-enter-class" enter-active-class="van-enter-active-class" leave-active-class="van-leave-active-class" leave-to-class="van-leave-to-class">
+        <view class="hotItem" wx:for="{{hotList}}" data-id="{{index}}" wx:key="list">
+          <view class="hotImg" bindtap="showTransition">
+            <image src="{{item.imagePath}}"></image>
+            <view class="imgBack"> </view>
+          </view>
+          <view class="hotTitle">{{item.text}}</view>
+          <view class="hotText">
+            <van-row>
+              <van-col span="12">
+                <view class="white">{{item.time}}</view>
+              </van-col>
+              <van-col span="12">
+                <view class="red">区域委员会</view>
+              </van-col>
+            </van-row>
+          </view>
+        </view>
+      </van-transition>
+    </scroll-view>
+  </view>
+  <van-transition show="{{ show }}" name="slide-down" custom-class="block">
+    <view class="hotmore" bindtap="hotActivity">>>查看更多</view>
+  </van-transition>
+  <view class="hotAction">
+    <image src="../../assets/images/LatestShape.png"></image>
+  </view>
+  <view class="dataTab">
+    <van-row>
+      <van-col span="6">
+        <view class="{{active==0?'tabSelected':'tab'}}" data-id="0" bindtap="onDataTab">区域委员会</view>
+      </van-col>
+      <van-col span="6">
+        <view class="{{active==1?'tabSelected':'tab'}}" data-id="1" bindtap="onDataTab">行业委员会</view>
+      </van-col>
+      <van-col span="6">
+        <view class="{{active==2?'tabSelected':'tab'}}" data-id="2" bindtap="onDataTab">兴趣委员会</view>
+      </van-col>
+      <van-col span="6">
+        <view class="{{active==3?'tabSelected':'tab'}}" data-id="3" bindtap="onDataTab">科创委员会</view>
+      </van-col>
+    </van-row>
+  </view>
+  <view class="dataList">
+    <view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" bindtap="circlePage" wx:key="list">
+      <van-row>
+        <van-col span="8">
+          <image src="{{item.imagePath}}"></image>
+        </van-col>
+        <van-col span="16">
+          <view class="text"> {{item.text}} </view>
+          <van-row>
+            <van-col span="16">
+              <view class="dataCircle">发布圈子：{{item.tit}}</view>
+            </van-col>
+            <van-col span="8">{{item.time}}</van-col>
+          </van-row>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+  <view class="hotmore">>>查看更多</view>
+</view>

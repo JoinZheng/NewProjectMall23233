@@ -1,0 +1,1818 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>加盟</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--要求当前网页使用IE浏览器最高版本的内核来渲染-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!--视口的设置：视口的宽度和设备一致，默认的缩放比例和PC端一致，用户不能自行缩放-->
+    <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link href="../images/favicon32.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="../jqueryplus/jquery-1.10.2.min.js"></script>
+    <script src="../jqueryplus/mainJS.js"></script>
+    <script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .homePage {
+            padding-top: 120px;
+        }
+
+        .baseStyle {
+            min-width: 1300px;
+            font-size: 18px;
+            text-align: left;
+            font-family: PingFangSC;
+            color: #333;
+            padding-top: 0px;
+        }
+
+        .head-navbar {
+            z-index: 999;
+            top: 0;
+            left: 0;
+            text-align: center;
+            font-family: PingFangSC,PingFangSC-Semibold;
+            position: fixed;
+            width: 100%;
+        }
+
+            .head-navbar .title_PC {
+                background-color: #1a1a1a;
+                color: #999;
+                justify-content: space-around;
+            }
+
+            .head-navbar .title {
+                height: 60px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .head-navbar .title_PC .title {
+                min-width: 700px;
+                margin: 0 30px;
+                justify-content: start;
+            }
+
+            .head-navbar .title {
+                height: 60px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .head-navbar .title_PC .navbar-logo {
+                width: 120px;
+            }
+
+            .head-navbar .title_PC .title {
+                min-width: 700px;
+                margin: 0 30px;
+                justify-content: start;
+            }
+
+            .head-navbar .title {
+                height: 60px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .head-navbar .title_PC .tab_active {
+                color: #df3348;
+            }
+
+            .head-navbar .title li {
+                width: 148px;
+                height: 100%;
+                line-height: 60px;
+                cursor: pointer;
+            }
+
+            .head-navbar .title_PC .phone {
+                min-width: 212px;
+                max-width: 300px;
+                font-size: 18px;
+                color: #fff;
+                margin: 0 30px;
+            }
+
+            .head-navbar .subTitle_PC {
+                color: #3c3c3c;
+                background-color: #fff;
+                padding-right: 60px;
+            }
+
+            .head-navbar .title {
+                height: 60px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .head-navbar .subTitle_PC .tab_active {
+                background: #df3348;
+                color: #fff;
+            }
+
+            .head-navbar .title li {
+                width: 148px;
+                height: 100%;
+                line-height: 60px;
+                cursor: pointer;
+            }
+
+        .banner-padding {
+            margin-top: 120px;
+        }
+
+        .banner-padding-part {
+            margin-top: 60px;
+        }
+        /***************************浮动层功能*****************************/
+        .SpeedBody {
+            position: relative;
+        }
+
+        .T-SpeedButton {
+            position: fixed;
+            bottom: 20vh;
+            right: 0;
+            width: 70px;
+            z-index: 1000;
+            background-color: #df3348;
+            color: #fff;
+        }
+
+            .T-SpeedButton .button-s_item {
+                cursor: pointer;
+                height: 127px;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .T-SpeedButton .button-s_item .icon {
+                    width: 32px;
+                    height: 32px;
+                }
+
+
+        .icon, .iconfont {
+            font-size: 1.867vw;
+        }
+
+        .icon, .iconfont, .iconFontStyle {
+            font-family: iconfont !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: inline-block;
+        }
+
+        .T-SpeedButton .button-s_item .s-button-text {
+            width: 36px;
+            word-break: break-all;
+            margin-top: 10px;
+        }
+
+        .T-SpeedButton .button-s_item {
+            cursor: pointer;
+            height: 127px;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .T-SpeedButton .button-s_item .icon {
+                width: 32px;
+                height: 32px;
+            }
+
+
+        .icon, .iconfont {
+            font-size: 1.867vw;
+        }
+
+        .icon, .iconfont, .iconFontStyle {
+            font-family: iconfont !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: inline-block;
+        }
+
+        .T-SpeedButton .button-s_item .s-button-text {
+            width: 36px;
+            word-break: break-all;
+            margin-top: 10px;
+        }
+        /*******************内容************************/
+        .baseStyle .m-layout {
+            padding: 50px 0;
+        }
+
+        .baseStyle .m-title {
+            font-size: 24px;
+            text-align: center;
+            font-family: PingFangSC;
+        }
+
+        .baseStyle .m-layout .m-content {
+            line-height: 40px;
+            width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .baseStyle .m-layout .m-content {
+            line-height: 40px;
+            width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text .left-quote {
+            transform: rotate(180deg);
+            left: 0;
+            top: 0;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text .quote {
+            position: absolute;
+            width: 26px;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text .left-quote {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            left: 0;
+            top: 0;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text .quote {
+            position: absolute;
+            width: 26px;
+        }
+
+        .baseStyle img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .baseStyle img {
+            width: 100%;
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text .right-quote {
+            bottom: 0;
+            right: 0;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text .quote {
+            position: absolute;
+            width: 26px;
+        }
+
+        .baseStyle .m-quote_layout .co-content-text .right-quote {
+            bottom: 0;
+            right: 0;
+        }
+
+        .baseStyle .m-title {
+            font-size: 24px;
+            text-align: center;
+            font-family: PingFangSC;
+        }
+
+        .baseStyle .m-layout .m-content {
+            line-height: 40px;
+            width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .baseStyle .m-layout .m-content {
+            line-height: 40px;
+            width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .baseStyle .spb-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .baseStyle .spb-flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .baseStyle .m-j_layout .m-content .content-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .baseStyle .m-j_layout .m-content .content-item {
+            width: 200px;
+            text-align: center;
+        }
+
+            .baseStyle .m-j_layout .m-content .content-item .item-top_c {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+
+            .baseStyle .m-j_layout .m-content .content-item .item-top_c {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+
+                .baseStyle .m-j_layout .m-content .content-item .item-top_c img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+
+                .baseStyle .m-j_layout .m-content .content-item .item-top_c img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+
+        /****************加盟功略*******************/
+
+        .strategyPage .m-title .m-subTitle2 {
+            font-size: 20px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .strategyPage .m-z_layout .m-content {
+            text-align: center;
+            padding: 0 56px;
+        }
+
+        .strategyPage .m-z_layout .spb-flex {
+            flex-wrap: wrap;
+        }
+
+        .p-select {
+            width: 516px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #bfbfbf;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+            .p-select .p-label {
+                width: 170px;
+                font-size: 18px;
+            }
+
+            .p-select .p-cascader {
+                width: 100%;
+            }
+
+        .th-cascader {
+            line-height: normal;
+        }
+
+        .th-cascader-rel {
+            display: inline-block;
+            width: 100%;
+            position: relative;
+        }
+
+        .th-input-wrapper {
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        .th-input-icon {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 16px;
+            text-align: center;
+            color: #808695;
+            position: absolute;
+            right: 0;
+            z-index: 3;
+        }
+
+        .p-select .p-cascader .th-cascader-rel .th-cascader-label {
+            font-size: 17px;
+        }
+
+        .th-cascader-label {
+            width: 100%;
+            height: 100%;
+            line-height: 32px;
+            padding: 0 7px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            cursor: pointer;
+            font-size: 12px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .th-cascader .th-cascader-arrow:first-of-type {
+            display: none;
+            cursor: pointer;
+        }
+
+        .p-select .p-cascader .th-cascader-arrow, .p-select .p-cascader .th-cascader-rel, .p-select .p-cascader input {
+            font-size: 18px;
+        }
+
+        .th-cascader-arrow {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            line-height: 1;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            font-size: 14px;
+            color: #808695;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        .p-input {
+            width: 516px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #bfbfbf;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+            .p-input .p-label {
+                width: 170px;
+                font-size: 18px;
+            }
+
+            .p-input .p-input-wrapper {
+                width: 100%;
+                font-size: 18px;
+            }
+
+        .th-input-wrapper {
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        .th-input-icon {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 16px;
+            text-align: center;
+            color: #808695;
+            position: absolute;
+            right: 0;
+            z-index: 3;
+        }
+
+        .p-input .p-input-wrapper .th-input-wrapper .th-input {
+            border: none;
+            font-size: 18px;
+            background-color: #fff;
+            color: inherit;
+        }
+
+        .th-input-medium {
+            height: 32px;
+            padding: 4px 7px;
+            border-radius: 4px;
+        }
+
+        .th-input {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100%;
+            height: 32px;
+            line-height: 1.5;
+            padding: 4px 7px;
+            font-size: 12px;
+            border: 1px solid #dcdee2;
+            border-radius: 4px;
+            color: #515a6e;
+            background-color: #fff;
+            background-image: none;
+            position: relative;
+            cursor: text;
+            -webkit-transition: border .2s ease-in-out,background .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+            transition: border .2s ease-in-out,background .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+            transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+            transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+            border: 0px solid #fff;
+        }
+
+        .content_c-button {
+            margin: 49px 0;
+        }
+
+        .th-btn {
+            background-color: #df3348;
+            height: 60px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 4rem;
+        }
+
+        .th-btn-error {
+            color: #fff;
+            background-color: #ed4014;
+            border-color: #ed4014;
+        }
+
+        .th-btn-long {
+            width: 100%;
+            color: #fff;
+        }
+
+        .th-btn, .th-btn:active, .th-btn:focus {
+            outline: 0;
+        }
+
+        .th-btn-join {
+            margin-left: 5%;
+            line-height: 40px !important;
+            border-radius: 4px !important;
+            color: #fff;
+            line-height: 44px;
+            cursor: pointer;
+        }
+
+        .th-btn-phone {
+            margin-left: 5%;
+            line-height: 40px !important;
+            border-radius: 60px !important;
+            color: #fff;
+            line-height: 46px !important;
+            cursor: pointer;
+        }
+        /***视频*****/
+        .swiper-slide {
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            transition-property: transform;
+            transition-property: transform,-webkit-transform;
+        }
+
+        .file-Swiperh .video-player {
+            position: absolute;
+            top: 0;
+            width: inherit;
+            height: inherit;
+            background-color: hsla(60,2%,78%,.197);
+            z-index: 999;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+            .file-Swiperh .video-player .play-button {
+                cursor: pointer;
+                width: 218px;
+                height: 50px;
+                background-color: rgba(0,0,0,.4);
+                border-radius: 50px;
+                color: #fff;
+                font-size: 24px;
+                line-height: 50px;
+                text-align: center;
+                padding: 0 10px;
+                margin-bottom: 16px;
+            }
+
+                .file-Swiperh .video-player .play-button .play-icon {
+                    width: 32px;
+                    height: 32px;
+                    font-size: 32px;
+                    color: #fff;
+                }
+
+        .button-s-line {
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+    <style type="text/css">
+        .th-modal-mask {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(55,55,55,.6);
+            height: 100%;
+            z-index: 1000;
+        }
+
+        .th-modal {
+            width: auto;
+            margin: 0 auto;
+            position: relative;
+            outline: 0;
+            top: 100px;
+        }
+
+        .th-modal-content {
+            position: relative;
+            background-color: #fff;
+            border: 0;
+            border-radius: 6px;
+            background-clip: padding-box;
+            -webkit-box-shadow: 0 4px 12px rgba(0,0,0,.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
+        }
+
+        .th-modal-close {
+            z-index: 1;
+            font-size: 30px;
+            position: absolute;
+            right: 20px;
+            top: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .th-modal-body {
+            font-size: 18px;
+            padding: 16px;
+            line-height: 1.5;
+        }
+
+        .th-modal-wrap {
+            position: fixed;
+            overflow: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+        }
+
+        .th-modal-header {
+            border-bottom: 1px solid #e8eaec;
+            padding: 14px 16px;
+            line-height: 1;
+        }
+
+            .th-modal-header .title {
+                margin-top: 20px;
+                font-size: 24px;
+                text-align: center;
+            }
+
+        .th-modal-body .valuable-fill_body {
+            margin: 0 auto;
+            width: 1108px;
+        }
+
+        .th-modal-body .hint {
+            color: red;
+        }
+
+        .th-modal-body .valuable-fill_b-item {
+            margin: 20px 0;
+        }
+
+        .th-modal-body .valuable-fill_bi-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+            .th-modal-body .valuable-fill_bi-content > div {
+                margin-bottom: 16px;
+            }
+
+        .th-modal-body .p-input {
+            width: 516px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #bfbfbf;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+            .th-modal-body .p-input .p-label {
+                width: 170px;
+                font-size: 18px;
+            }
+
+            .th-modal-body .p-input .p-input-wrapper {
+                width: 100%;
+                font-size: 18px;
+            }
+
+        .th-modal-body .th-input-wrapper {
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        .th-modal-footer {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+            .th-modal-footer .th-btn {
+                height: 50px;
+                width: 90%;
+                font-size: 18px;
+                border-radius: 0;
+                line-height: 20px;
+            }
+
+            .th-modal-footer .th-btn-error {
+                color: #fff;
+                background-color: #ed4014;
+                border-color: #ed4014;
+            }
+
+
+        .p-input .p-input-wrapper .th-input-wrapper .th-input {
+            border: none;
+            font-size: 18px;
+            background-color: #fff;
+            color: inherit;
+        }
+
+        .th-modal-wrap * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .th-input-medium {
+            height: 32px;
+            padding: 4px 7px;
+            border-radius: 4px;
+        }
+        /***radio样式***/
+        .radio-custom input[type=radio] {
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .radio-custom input[type=radio] {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .radio-custom label {
+            min-height: 22px;
+            line-height: 22px;
+            margin-bottom: 0;
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        .radio-custom label {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            padding-left: 24px;
+            padding-right: 10px;
+        }
+
+            .radio-custom label::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 0;
+                margin-left: 0px;
+                border: 1px solid #df3348;
+                border-radius: 50%;
+                background-color: #fff;
+                -webkit-transition: border .3s ease-in-out 0s,color .3s ease-in-out 0s;
+                -o-transition: border .3s ease-in-out 0s,color .3s ease-in-out 0s;
+                transition: border .3s ease-in-out 0s,color .3s ease-in-out 0s;
+            }
+
+        .radio-custom input[type=radio]:checked + label::before {
+            border-color: #df3348;
+            border-width: 10px;
+        }
+
+        .radio-primary input[type=radio]:checked + label::before {
+            border-color: #df3348;
+        }
+
+        .radio-custom label::after {
+            display: inline-block;
+            position: absolute;
+            content: " ";
+            width: 6px;
+            height: 6px;
+            left: 7px;
+            top: 7px;
+            margin-left: 0px;
+            border: 2px solid #df3348;
+            border-radius: 50%;
+            background-color: transparent;
+            -webkit-transform: scale(0,0);
+            -ms-transform: scale(0,0);
+            -o-transform: scale(0,0);
+            transform: scale(0,0);
+            transition-transform: .1s cubic-bezier(.8,-.33,.2,1.33);
+        }
+
+        .radio-custom input[type=radio]:checked + label::after {
+            -webkit-transform: scale(1,1);
+            -ms-transform: scale(1,1);
+            -o-transform: scale(1,1);
+            transform: scale(1,1);
+        }
+
+        .radio-primary input[type=radio]:checked + label::after {
+            border-color: #fff;
+        }
+    </style>
+    <style type="text/css">
+        .help-search-content .title {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: left;
+            color: #000;
+            margin-left: 60px;
+        }
+
+        .problem-container {
+            padding: 0;
+            margin: 0px;
+        }
+
+            .problem-container .problem-ul {
+                padding: 0px;
+            }
+
+                .problem-container .problem-ul .problem-li {
+                    box-sizing: border-box;
+                    padding: 4px 0px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    width: 570px;
+                    border-bottom: 1px solid #abafb8;
+                }
+
+                    .problem-container .problem-ul .problem-li span {
+                        width: 540px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow-wrap: normal;
+                    }
+
+                    .problem-container .problem-ul .problem-li div {
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+                        margin: 6px auto;
+                    }
+
+                        .problem-container .problem-ul .problem-li div::after {
+                            content: "";
+                            position: absolute;
+                            top: 6px;
+                            right: 8px;
+                            width: 14px;
+                            height: 14px;
+                            border-right: 1px solid #000;
+                            border-bottom: 1px solid #000;
+                            transform: rotate(-45deg);
+                        }
+
+                        .problem-container .problem-ul .problem-li div:hover::after {
+                            top: 8px;
+                            right: 8px;
+                            transform: rotate(225deg);
+                        }
+
+        .problem-content {
+            min-height: 286px;
+            width: 580px;
+        }
+
+
+            .problem-content .title {
+                font-size: 30px;
+                display: flex;
+                -webkit-box-pack: justify;
+                -webkit-box-align: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+                .problem-content .title .arrow {
+                    content: "";
+                    top: 6px;
+                    right: 8px;
+                    width: 14px;
+                    height: 14px;
+                    border-right: 1px solid #000;
+                    border-bottom: 1px solid #000;
+                    transform: rotate(135deg);
+                }
+
+            .problem-content .content {
+                padding-top: 20px;
+                color: #666666;
+            }
+    </style>
+</head>
+<body>
+    <!--途虎养车加盟-->
+    <div class="homePage baseStyle">
+        <div class="head-navbar">
+            <div class="title_PC title">
+                <div class="title">
+                    <img src="../images/logo-red.png" class="navbar-logo" />
+                    <ul class="title">
+                        <li class="tab_active">途虎养车加盟</li>
+                        <li class="" onclick="workShow('strategyPage');">加盟攻略</li>
+                        <li class="" onclick="workShow('PCrecommendPage');">旺铺推荐</li>
+                    </ul>
+                </div>
+                <div class="phone">加盟热线：021-31787693</div>
+            </div>
+            <ul class="subTitle_PC title">
+                <li class="tab_active">公司介绍</li>
+                <li class="" onclick="workShow('pcWorkShop');">工场店</li>
+                <li class="" onclick="workShow('pcCooperativeCertification');">合作认证中心</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="banner-padding">
+            <div class="h-banner">
+                <img src="../images/workShop1.png" />
+            </div>
+            <div class="m-layout m-quote_layout">
+                <div class="m-title">
+                    <div>公司介绍</div>
+                </div>
+                <div class="co-content-text m-content">
+                    <img src="../images/workShop20.png" class="quote left-quote">
+                    <img src="../images/workShop20.png" class="quote right-quote">
+                    <div>
+                        <p>
+                            途虎养车是中国领先的线上线下一体化汽车服务平台。凭借以客户为中心的服务理念和高效的供应链，打造一个由车主、供应商、汽车服务门店和其他参与者组成的充满活力的汽车服务生态系统。
+                        </p>
+                        <p>
+                            途虎养车的服务网络不断扩张，途虎养车工场店超5000家，已覆盖中国内地所有省份以及超1500个地区。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>公司发展史</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop4.png" />
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>为什么选择途虎养车</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop5.png" />
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>加盟优势</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop6.png" />
+                </div>
+            </div>
+            <div class="m-j_layout m-layout">
+                <div class="m-title">
+                    <div>加盟条件</div>
+                </div>
+                <div class="m-content spb-flex">
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop21.png" />
+                            <span class="title">资金</span>
+                        </div>
+                        <p>具备充足的资金实力</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop22.png" />
+                            <span class="title">意愿</span>
+                        </div>
+                        <p>高度认同途虎养车价值观及企业服务理念</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop23.png" />
+                            <span class="title">认知</span>
+                        </div>
+                        <p>对汽车后市场发展前景有较好认知，理解关键业务</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop24.png" />
+                            <span class="title">经验</span>
+                        </div>
+                        <p>有一定的汽车后市场经验或者门店运营管理经验</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop25.png" />
+                            <span class="title">精力</span>
+                        </div>
+                        <p>有充足的精力投入未来的门店管理</p>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer_PC">
+                <img src="../images/workShop7.png" />
+            </footer>
+        </div>
+    </div>
+    <!--工厂店--->
+    <div class="pcWorkShop baseStyle data-hide">
+        <div class="head-navbar">
+            <div class="title_PC title">
+                <div class="title">
+                    <img src="../images/logo-red.png" class="navbar-logo" />
+                    <ul class="title">
+                        <li class="tab_active">途虎养车加盟</li>
+                        <li class="" onclick="workShow('strategyPage');">加盟攻略</li>
+                        <li class="" onclick="workShow('PCrecommendPage');">旺铺推荐</li>
+                    </ul>
+                </div>
+                <div class="phone">加盟热线：021-31787693</div>
+            </div>
+            <ul class="subTitle_PC title">
+                <li class="" onclick="workShow('homePage');">公司介绍</li>
+                <li class="tab_active">工场店</li>
+                <li class="" onclick="workShow('pcCooperativeCertification');">合作认证中心</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="banner-padding">
+            <div class="m-p_layout m-layout m-quote_layout">
+                <div class="m-content spb-flex">
+                    <div>
+                        <div class="content-title">
+                            <img src="../images/workShop8.png" style="width:300px;" />
+                        </div>
+                        <div class="co-content-text">
+                            <img src="../images/workShop20.png" class="quote left-quote">
+                            <img src="../images/workShop20.png" class="quote right-quote">
+                            <div>
+                                <p>
+                                    中国汽车服务行业卓越连锁品牌，自2016年1月首家开业以来，高效布局全国。截至2023年5月31日，途虎养车工场店超5000家，已覆盖中国内地所有省份以及超1500个地区。
+                                </p>
+                                <p>
+                                    途虎养车工场店凭借严格、精准的加盟要求，标准化门店管理体系、高效物流体系、货源保障成为行业领先品牌。在途虎养车与合作伙伴的共同努力下，途虎养车已成为消费者钟爱的汽车养护平台。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-iintroduce">
+                        <div class="file-Swiperh">
+                            <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                    <div class="swiper-slide swiper-slide-active" style="width: 599px;">
+                                        <div class="video-player">
+                                            <div class="play-button">
+                                                <span class="play-icon play-icon th-icon-md-arrow-dropright-circle"></span>
+                                                <span>加盟短片介绍</span>
+                                            </div>
+                                            <div class="play-button">
+                                                <span class="play-icon play-icon th-icon-md-arrow-dropright-circle"></span>
+                                                <span>了解加盟需求</span>
+                                            </div>
+                                        </div>
+                                        <img src="../images/workShop9.png" />
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>工场店发展规模</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop10.png" />
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>项目支持</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop11.png" />
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>场地要求&amp;加盟政策</div>
+                </div>
+                <div class="m-content spb-flex">
+                    <div>
+                        <div class="m-title">场地要求</div>
+                        <img src="../images/workShop12.png" class="mt20" />
+                    </div>
+                    <div>
+                        <div class="m-title">加盟政策</div>
+                        <img src="../images/workShop13.png" class="mt20" />
+                    </div>
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>加盟流程</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop14.png" />
+                </div>
+            </div>
+        </div>
+        <footer class="footer_PC">
+            <img src="../images/workShop7.png" />
+        </footer>
+    </div>
+
+    <!--合作认证中心-->
+    <div class="pcCooperativeCertification baseStyle data-hide">
+        <div class="head-navbar">
+            <div class="title_PC title">
+                <div class="title">
+                    <img src="../images/logo-red.png" class="navbar-logo">
+                    <ul class="title">
+                        <li class="tab_active">途虎养车加盟</li>
+                        <li class="" onclick="workShow('strategyPage');">加盟攻略</li>
+                        <li class="" onclick="workShow('PCrecommendPage');">旺铺推荐</li>
+                    </ul>
+                </div>
+                <div class="phone">加盟热线：021-31787693</div>
+            </div>
+            <ul class="subTitle_PC title">
+                <li class="" onclick="workShow('homePage');">公司介绍</li>
+                <li class="" onclick="workShow('pcWorkShop');">工场店</li>
+                <li class="tab_active">合作认证中心</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="banner-padding">
+            <div class="m-p_layout m-layout m-quote_layout">
+                <div class="m-content spb-flex">
+                    <div>
+                        <div class="content-title">
+                            <img src="../images/workShop15.png" style="width:300px;" />
+                        </div>
+                        <div class="co-content-text">
+                            <img src="../images/workShop20.png" class="quote left-quote">
+                            <img src="../images/workShop20.png" class="quote right-quote">
+                            <div>
+                                途虎养车认证的汽车后市场门店；整合平台技术及供应链资源，提升合作门店系统化、标准化的综合管理能力。合作认证管理中心致力于服务项目多元化，助力线下汽修门店实现数字化转型，高标准、低成本的满足车主多元化、个性化需求，让有车的地方就有服务。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-iintroduce">
+                        <img src="../images/workShop16.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>项目优势</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop17.png" />
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>项目支持</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop18.png" />
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>场地要求&amp;加盟政策</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop19.png" />
+                </div>
+            </div>
+        </div>
+        <footer class="footer_PC">
+            <img src="../images/workShop7.png" />
+        </footer>
+    </div>
+
+    <!---加盟功略-->
+    <div class="strategyPage baseStyle data-hide">
+        <div class="head-navbar">
+            <div class="title_PC title">
+                <div class="title">
+                    <img src="../images/logo-red.png" class="navbar-logo"/>
+                    <ul class="title">
+                        <li class="" onclick="workShow('homePage');">途虎养车加盟</li>
+                        <li class="tab_active">加盟攻略</li>
+                        <li class="" onclick="workShow('PCrecommendPage');">旺铺推荐</li>
+                    </ul>
+                </div>
+                <div class="phone">加盟热线：021-31787693</div>
+            </div>
+        </div>
+        <div class="banner-padding-part">
+            <div class="h-banner">
+                <img src="../images/workShop1.png" />
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>加盟流程</div>
+                </div>
+                <div class="m-content">
+                    <img src="../images/workShop2.png" />
+                </div>
+            </div>
+            <div class="m-j_layout m-layout">
+                <div class="m-title">
+                    <div>加盟条件</div>
+                </div>
+                <div class="m-content spb-flex">
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop21.png" />
+                            <span class="title">资金</span>
+                        </div>
+                        <p>具备充足的资金实力</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop22.png" />
+                            <span class="title">意愿</span>
+                        </div>
+                        <p>高度认同途虎养车价值观及企业服务理念</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop23.png" />
+                            <span class="title">认知</span>
+                        </div>
+                        <p>对汽车后市场发展前景有较好认知，理解关键业务</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop24.png" />
+                            <span class="title">经验</span>
+                        </div>
+                        <p>有一定的汽车后市场经验或者门店运营管理经验</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="item-top_c">
+                            <img src="../images/workShop25.png" />
+                            <span class="title">精力</span>
+                        </div>
+                        <p>有充足的精力投入未来的门店管理</p>
+                    </div>
+                </div>
+            </div>
+            <div class="m-z_layout m-layout">
+                <div class="m-title">
+                    <div>加盟项目评估参考</div>
+                    <div class="m-subTitle2">仅为参考，实际评估以电话咨询为准021-31787693</div>
+                </div>
+                <div class="m-content">
+                    <div class="spb-flex">
+                        <div class="p-select">
+                            <div class="p-label">加盟城市</div>
+                            <div class="p-cascader">
+                                <div class="th-cascader th-cascader-size-medium">
+                                    <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                        <i class="th-icon th-icon-ios-loading ivu-load-loop th-input-icon th-input-icon-validate"></i>
+                                        <input placeholder="请填写（必选）" id="inputStrategyCity" spellcheck="false" autocomplete="off" type="text" class="th-input th-input-medium" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-select">
+                            <div class="p-label">是否有门店</div>
+                            <div class="p-cascader">
+                                <div class="th-cascader th-cascader-size-medium">
+                                    <div class="th-cascader-rel">
+                                        <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                            <div class="radio-custom radio-primary" style="float:left;">
+                                                <input type="radio" name="radStrategyShop" value="1">
+                                                <label style="width:70px;">是</label>
+                                            </div>
+                                            <div class="radio-custom radio-primary" style="float:left;">
+                                                <input type="radio" name="radStrategyShop" checked="checked" value="0">
+                                                <label>否</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-input">
+                            <div class="p-label">投资预算</div>
+                            <div class="p-input-wrapper">
+                                <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                    <i class="th-icon th-icon-ios-loading ivu-load-loop th-input-icon th-input-icon-validate"></i>
+                                    <input placeholder="单位万元（必填）" id="inputStrategyMoney" spellcheck="false" autocomplete="off" type="number" class="th-input th-input-medium">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_c-button">
+                        <div class="th-btn th-btn-long" onclick="fromJoinStrategy()">
+                            <span>查询</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer_PC">
+            <img src="../images/workShop7.png" />
+        </footer>
+    </div>
+
+    <!--旺铺推荐-->
+    <div class="PCrecommendPage baseStyle data-hide">
+        <div class="head-navbar">
+            <div class="title_PC title">
+                <div class="title">
+                    <img src="../images/logo-red.png" class="navbar-logo">
+                    <ul class="title">
+                        <li class="" onclick="workShow('homePage');">途虎养车加盟</li>
+                        <li class="" onclick="workShow('strategyPage');">加盟攻略</li>
+                        <li class="tab_active">旺铺推荐</li>
+                    </ul>
+                </div>
+                <div class="phone">加盟热线：021-31787693</div>
+            </div>
+        </div>
+        <div class="banner-padding-part">
+            <div class="h-banner">
+                <img src="../images/workShop3.png" />
+            </div>
+            <div class="m-layout m-quote_layout">
+                <div class="m-title">
+                    <div>旺铺拓展声明</div>
+                </div>
+                <div class="co-content-text m-content">
+                    <img src="../images/workShop20.png" class="quote left-quote">
+                    <img src="../images/workShop20.png" class="quote right-quote">
+                    <div>
+                        <p>尊敬的业主/房产公司：</p>
+                        <p>途虎养车面向全国开放旺铺推荐报名窗口，用于途虎养车旗下多元化连锁品牌门店的建店发展。</p>
+                        <p>为了保证双方利益和信誉，途虎养车特此声明：</p>
+                        <p>旺铺推荐以此页面为唯一推荐通道，业主/房产公司推荐的合格旺铺均仅用于途虎养车旗下连锁门店自营/加盟使用，同时禁止途虎养车任何员工与业主/房产公司产生私人经济往来，请业主及房产公司监督。</p>
+                        <p>感谢社会大众对途虎养车的信任与支持，各方协作共赢！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>途虎养车门店展示</div>
+                </div>
+                <div class="m-content">
+                    <img src="https://staticfile.tuhu.org/shop.tuhu.cn/marketing/static/img/img1.5c7396d3.png" />
+                </div>
+            </div>
+            <div class="m-layout">
+                <div class="m-title">
+                    <div>旺铺推荐要求</div>
+                </div>
+                <div class="m-content">
+                    <img src="https://staticfile.tuhu.org/shop.tuhu.cn/marketing/static/img/img2.e6e7e738.png" />
+                </div>
+            </div>
+        </div>
+        <footer class="footer_PC">
+            <img src="../images/workShop7.png" />
+        </footer>
+    </div>
+
+    <!--浮动功能-->
+    <!--<div class="SpeedBody">
+        <div class="T-SpeedButton">
+            <div class="button-s_item button-s-line">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACw0lEQVR4Xu2bTahNURTHf3+hlCiMFAZSDCgD5A1kYGJKKSL5qGdioIwYKCXKxMCAGSIDYWjgY0B6RSiJgYneG/koGbzylaWt83J779xzz93n7Hvve2ed8V5r7fXfe+29/+usJRr+qeH+UxoAM1sKHAa2AyuBxcCsHgH4C/gIvALuAjck/azDdkcAzCyMOQGcBObVYbQGHR+AQ5IeVdVVCICZhRW+CeyqaiiB/O8MhGtVdHcC4Ey2+lVspJQNYbBV0kiskbYAmNkq4A0wN1Z5j+ReABskWYy9IgDOA8djlPZBZih2FxQB8BpY2wdnYkyelnQqRrAIgG/AghilfZC5IulAjN0iAKJiKmYSNcjckbSzVY+ZHQTOAuPAsKT7eXZmJABmthD4DMzJnB6VtKJJAKwG3rU6LCl3sWfqDnAAfAd4CPgZ4Ieg3wItCPg16O8Afwj5S9C5QA4CzgXacXEzm7b5ADNzMuRkyMmQkyEnQ06GnAz9R8DZoLNBZ4POBp0NOhucioDTYafDbRDwfIAnRDwj5CmxGmp3eqXigqRjE8aalBMM5bJPgN2SQjH1v8/M1gBvU+UDQvXoOeAB8Cm2QjPl1kgJwC1gn6QfKR2oqjtVCLwPlaOD7nwWAkn+CxyVdHHy6phZaKC4DCyrunIV5ceygsh7qUJgk6RnOQCMDoDzE9Mak7Q8VQhslPS8yQBMpxBIcgaEQ3CdpO8VYzW5eF0hkFcuH67BvXV1bKVCwsy2Aa3V4eOS5nebEnsKDOUIhYdQKEN/2Pr6SuVMN3qzDrfQ5HF9UrPHiKQ8X9r3DZrZMHCpmwkM8NgjksJVPeUrSonNBh4DmwfYsTJTCx1lWyQF3lAegOxFtQS4HRSUsTSAYwJR2iHpS7u5lekcDc2Te4D9wHpgEZRvue0DKF+Bl8DVrMX2T9EcOgLQBwd6arLxAPwFvOMfX1YJsLkAAAAASUVORK5CYII=" class="icon">
+                <div class="s-button-text">加盟宝典</div>
+            </div>
+            <div class="button-s_item">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE0SURBVHgB7ZeBEYIwDEVTJ9ANHMENZAQ30BHcQDZQJ5ARdAOcQDcAJ4ANvqkNymER0ILeybvLFVrS/NKSHEQ9LwAwZ0vwGUt6B3acwA16AZOmwcdsEdwR6TmbCIjgnhPbsE7wNdpjVxV8hfZZlQWfoTu8LK7KCUi4qd4jN6RKqVFRAKhDWMAt9oC+TF5ASt0Rk0XA9oWDa3GHpx4+AkOYZFFE93mwJydfrEgiPmXz3Q+7sghZcOPJbchnJRAHbUtp9RvZ81goPvr5mYzFbBseSy3znbl/Q02AqYgRLLkcJmvuLP1ZLamshKokqC+XU3qo1wRsFzIrndMjb8Rk9jW1jIVsx1swpfy6AlrJCdm3n+en8kAvoBfQC/gpAZ2V5jIBZ3JPUPtJKc0B3KBLc4g6/wR/yRUukIgIzYY2kAAAAABJRU5ErkJggg==" class="icon">
+                <div class="s-button-text">旺铺推荐</div>
+            </div>
+        </div>
+    </div>-->
+    <div class="SpeedBody">
+        <div class="T-SpeedButton">
+            <div class="button-s_item button-s-line">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACw0lEQVR4Xu2bTahNURTHf3+hlCiMFAZSDCgD5A1kYGJKKSL5qGdioIwYKCXKxMCAGSIDYWjgY0B6RSiJgYneG/koGbzylaWt83J779xzz93n7Hvve2ed8V5r7fXfe+29/+usJRr+qeH+UxoAM1sKHAa2AyuBxcCsHgH4C/gIvALuAjck/azDdkcAzCyMOQGcBObVYbQGHR+AQ5IeVdVVCICZhRW+CeyqaiiB/O8MhGtVdHcC4Ey2+lVspJQNYbBV0kiskbYAmNkq4A0wN1Z5j+ReABskWYy9IgDOA8djlPZBZih2FxQB8BpY2wdnYkyelnQqRrAIgG/AghilfZC5IulAjN0iAKJiKmYSNcjckbSzVY+ZHQTOAuPAsKT7eXZmJABmthD4DMzJnB6VtKJJAKwG3rU6LCl3sWfqDnAAfAd4CPgZ4Ieg3wItCPg16O8Afwj5S9C5QA4CzgXacXEzm7b5ADNzMuRkyMmQkyEnQ06GnAz9R8DZoLNBZ4POBp0NOhucioDTYafDbRDwfIAnRDwj5CmxGmp3eqXigqRjE8aalBMM5bJPgN2SQjH1v8/M1gBvU+UDQvXoOeAB8Cm2QjPl1kgJwC1gn6QfKR2oqjtVCLwPlaOD7nwWAkn+CxyVdHHy6phZaKC4DCyrunIV5ceygsh7qUJgk6RnOQCMDoDzE9Mak7Q8VQhslPS8yQBMpxBIcgaEQ3CdpO8VYzW5eF0hkFcuH67BvXV1bKVCwsy2Aa3V4eOS5nebEnsKDOUIhYdQKEN/2Pr6SuVMN3qzDrfQ5HF9UrPHiKQ8X9r3DZrZMHCpmwkM8NgjksJVPeUrSonNBh4DmwfYsTJTCx1lWyQF3lAegOxFtQS4HRSUsTSAYwJR2iHpS7u5lekcDc2Te4D9wHpgEZRvue0DKF+Bl8DVrMX2T9EcOgLQBwd6arLxAPwFvOMfX1YJsLkAAAAASUVORK5CYII=" class="icon">
+                <div class="s-button-text" onclick="showBook()">加盟宝典</div>
+            </div>
+            <div class="button-s_item">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEOklEQVR4Xu2aXeieYxzHP99EkxYHMyPEiWLtiJY1B5soQg4mL+VIYjiQ5sBoxckWipKtzeRo00q0IlJekijhRNa8lLdGylsMtbz89Hu67nm63e/3dT3P/Xie++R/cF/3ff0+n/v3u96ev5jzS3POz0LAIgPm3MCiBOY8ARaD4KIEFiUwMANmdj6wAfC/y4AfgQ+A5yS9FTvcwZSAma0AdgFXQenY9Bpws6TPY4kYhAAzWwW8CJzeAOx74GpJbzdoW9tk6gIC/KvAybXR/tvgMHB5jJJIIsDMTgTOAo4FvgO+kmR5wI7w2WuiSIgmwMz8C94OXAucm6vjV4DLJP2VRd8TPpqEKALM7A5gG7C0II3fBy6V9FNk+CgSegkws2OAJ4CbSurXp691CeF7S+gsIMDvAa4vgf8VWCXpi0RfPt9tpzGhk4AG8B7cg5LumRB850xoLaAhvAd0gSSvf8Ks8GHJPO+zw7fAqS2mwaqmrTKhlYAW8B7gUkleBi7gBuDpgqgdflO493qYPWJ4aCyhsYCW8A5xkqSfg4BrgGdyZCN4SY+GNqcAE5fQSEAHeGe6KFupmdkS4D1gZZDwN3B3Bj82TrgEX++fFyMNgNpMqBXQEd7j3yHJ1wejy8x8jXAr4JD7y5axZjbRTKgU0APemY8AqyX5WqDyMrNlknyTk8mKnQleimskHcwHUidgt28/6wAq7n8ZNi3/6ThkhS+kHgKuA9ZL+jQnIeaY8FFYl/w5Hm+pgLC8fbwHfPao1+HDwFOSvg7gxwGXAFuAC0NDv1ckIeaYcIsk/6hHr0IBnpLAZyVr+65Osvn+d+A04PiCF6WW8IakdU0EbAU2dyXt+VxKCX8ASyT5LDS6yjLgY+CcniB9Hk8pYbkkP6MoFmBmnp6jWp3ylUrCCZK8DEsFrAbemTJ81n1sCYcknVE5BpjZ+rAaG4iDUTbGmh12SrqtToAvQw8MhT7EEUOCz/8rJX1SJ8Cnpx9Kpqlpeukr4QFJ9+cBymaBF4Arpklb0ndXCb4Vv7HoZLpMwJXA8wMU4CG1lbAvwB89ka4sgeymmb3pW9oZl1AJ72xVe4EzgXeB5TMqoRa+UoDfNLM1wMuR9wQxfZaVw13AfeM/xJR12uRAZC3w0ixJaGO4VkDIhP+thEYCZkTCY5LubPP1a8eA/MvMbKiZ0GjAK5LTOAPGpsehSegM3zoDBiihF3xnAQMZE3rD9xIwZQlR4HsLmJKEaPBRBExYQlT4aAImJCE6fFQBiSUkgY8uIJGEZPBJBESWkBQ+mYBIEpLDJxUwdp6wv8OhypPAxib7+babn3z71nuBth2amZ8s7W14vPYLcK+k7W376do+uYCx/YMftG4ELi44cvez+meBR8b/UaIrVJvnJiZgTIT/7nB2+FeZ3wD/ueqbNkHHbDtxATGDj/GuhYAYFmf5HXOfAf8AYpXqUB+ZwKEAAAAASUVORK5CYII=" class="icon">
+                <div class="s-button-text" onclick="showJoin()">申请加盟</div>
+            </div>
+        </div>
+    </div>
+
+    <!--申请加盟-->
+    <div data-transfer="true" id="appleJoin" class="v-transfer-dom data-hide">
+        <div class="th-modal-mask" style="z-index: 1009;"></div>
+        <div class="th-modal-wrap valuable-book_fill" style="z-index: 1009;">
+            <div class="th-modal" style="width: 1200px;">
+                <div class="th-modal-content">
+                    <a class="th-modal-close" onclick="hideJoin()">&times;</a>
+                    <div class="th-modal-header">
+                        <div class="title">填写申请资料</div>
+                    </div>
+                    <div class="th-modal-body">
+                        <div class="valuable-fill_body">
+                            <div class="valuable-fill_b-item">
+                                <div class="valuable-fill_bi-content">
+                                    <div class="p-input">
+                                        <div class="p-label" style="width: 220px;">姓名</div>
+                                        <div class="p-input-wrapper">
+                                            <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                                <input placeholder="请输入（必填）" id="inputJoinName" spellcheck="false" autocomplete="off" type="text" class="th-input th-input-medium">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-select">
+                                        <div class="p-label" style="width: 220px;">希望加盟区域</div>
+                                        <div class="p-cascader">
+                                            <div class="th-cascader th-cascader-show-clear th-cascader-size-medium">
+                                                <div class="th-cascader-rel">
+                                                    <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                                        <input id="inputJoinArea" spellcheck="false" autocomplete="off" type="text" class="th-input th-input-medium">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-input">
+                                        <div class="p-label" style="width: 220px;">手机号码</div>
+                                        <div class="p-input-wrapper">
+                                            <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                                <input placeholder="请输入（必填）" id="inputJoinPhone" spellcheck="false" maxlength="11" autocomplete="off" type="text" class="th-input th-input-medium">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-select">
+                                        <div class="p-label" style="width: 220px;">意向加盟类型</div>
+                                        <div class="p-cascader">
+                                            <div class="th-cascader th-cascader-show-clear th-cascader-size-medium">
+                                                <div class="th-cascader-rel">
+                                                    <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radJoinType" value="1">
+                                                            <label>工场店</label>
+                                                        </div>
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radJoinType" `checked="checked" value="0">
+                                                            <label>合作认证</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-select">
+                                        <div class="p-label" style="width: 220px;">是否有门店</div>
+                                        <div class="p-cascader">
+                                            <div class="th-cascader th-cascader-show-clear th-cascader-size-medium">
+                                                <div class="th-cascader-rel">
+                                                    <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radIsShop" value="1">
+                                                            <label style="width:70px;">是</label>
+                                                        </div>
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radIsShop" checked="checked" value="0">
+                                                            <label>否</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-select">
+                                        <div class="p-label" style="width: 220px;">计划投入资金</div>
+                                        <div class="p-cascader">
+                                            <div class="th-cascader th-cascader-show-clear th-cascader-size-medium">
+                                                <div class="th-cascader-rel">
+                                                    <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radJoinMoney" checked="checked" value="1">
+                                                            <label>80万以下</label>
+                                                        </div>
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radJoinMoney" value="2">
+                                                            <label>80万-150万</label>
+                                                        </div>
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radJoinMoney" value="3">
+                                                            <label>150万以上</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-select">
+                                        <div class="p-label" style="width: 220px;">您是否为汽修行业</div>
+                                        <div class="p-cascader">
+                                            <div class="th-cascader th-cascader-show-clear th-cascader-size-medium">
+                                                <div class="th-cascader-rel">
+                                                    <div class="th-input-wrapper th-input-wrapper-medium th-input-type">
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radIsCar" value="1">
+                                                            <label style="width:70px;">是</label>
+                                                        </div>
+                                                        <div class="radio-custom radio-primary" style="float:left;">
+                                                            <input type="radio" name="radIsCar" checked="checked" value="0">
+                                                            <label>否</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="th-modal-footer">
+                        <div class="th-btn th-btn-join" onclick="formJoinApple()">
+                            <span>提交申请</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--提示错误框-->
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        错误提示
+                    </h4>
+                </div>
+                <div class="modal-body" style="color:#ed4014" id="divTip">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--加盟宝典-->
+    <div data-transfer="true" id="valuableBook" class="v-transfer-dom data-hide">
+        <div class="th-modal-mask" style="z-index: 1009;"></div>
+        <div class="th-modal-wrap valuable-book_fill" style="z-index: 1009;">
+            <div class="th-modal" style="width: 600px;">
+                <div class="th-modal-content">
+                    <a class="th-modal-close" onclick="hideBook()" style="color:#fff;">&times;</a>
+                    <div class="th-modal-header" style="background-color: #df3348;">
+                        <div class="title" style="margin-top: 0px; background-color: #df3348; color: #fff;">商家客服</div>
+                    </div>
+                    <div class="th-modal-body">
+                        <div class="valuable-fill_body">
+                            <div class="help-search-content" style="height:50px;">
+                                <div class="title">帮助中心</div>
+                            </div>
+                            <div class="problem-container">
+                                <div class="problem-ul">
+                                    <div class="problem-li">
+                                        <span>门店引流都是途虎负责，帮门店引入客户吗？</span>
+                                        <div></div>
+                                    </div>
+                                    <div class="problem-li">
+                                        <span>途虎工场店门店之间有区域保护吗？</span>
+                                        <div></div>
+                                    </div>
+                                    <div class="problem-li">
+                                        <span>为什么门店帐款都要入途虎系统？</span>
+                                        <div></div>
+                                    </div>
+                                    <div class="problem-li">
+                                        <span>为什么每个月需要缴纳8000元管理费？</span>
+                                        <div></div>
+                                    </div>
+                                    <div class="problem-li">
+                                        <span>除了加盟费和保证金，是否还有其他费用？</span>
+                                        <div></div>
+                                    </div>
+                                    <div class="problem-li">
+                                        <span>工场店在经营中是否有很多的管理要求和考核？</span>
+                                        <div></div>
+                                    </div>
+                                    <div class="problem-li">
+                                        <span>途虎与门店的结算周期是多久？</span>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="problem-content data-hide">
+                                    <div class="title">
+                                        <div class="arrow"></div>
+                                        <div style="margin-left:180px;">知识库详情</div>
+                                    </div>
+                                    <div class="content">
+                                        知识库详情知识库详情<br />知识库详情知识库详情
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="th-modal-footer">
+                        <div class="th-btn th-btn-phone">
+                            <span>联系电话：021-31787693</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //申请加盟
+        var divClassName = ['.homePage', '.pcWorkShop', '.pcCooperativeCertification', '.strategyPage', '.PCrecommendPage'];
+        function workShow(className) {
+            className = `.${className}`;
+            $(divClassName.join(',')).hide();
+            $(className).show();
+        }
+        function showJoin() {
+            $("#appleJoin").show()
+        }
+        function hideJoin() {
+            $("#appleJoin").hide()
+        }
+        //加盟宝典
+        function showBook() {
+            $("#valuableBook").show()
+        }
+        function hideBook() {
+            $("#valuableBook").hide()
+        }
+        //加盟功略
+        function fromJoinStrategy() {
+            let city = $("#inputStrategyCity").val().trim();
+            let shop = $("input[name='radStrategyShop']:checked").val().trim();
+            let money = $("#inputStrategyMoney").val().trim();
+            if (city === '') {
+                $("#divTip").html("请输入加盟城市！");
+                $('#myModal').modal('show')
+                return;
+            }
+            if (shop === '') {
+                $("#divTip").html("请输入门店！");
+                $('#myModal').modal('show')
+                return;
+            }
+            if (money === '') {
+                $("#divTip").html("请输入投资预算！");
+                $('#myModal').modal('show')
+                return;
+            }
+        }
+
+        //申请加盟
+        function formJoinApple() {
+            let name = $("#inputJoinName").val().trim();
+            let area = $("#inputJoinArea").val().trim();
+            let phone = $("#inputJoinPhone").val().trim();
+            let type = $("input[name='radJoinType']:checked").val();
+            let shop = $("input[name='radIsShop']:checked").val();
+            let money = $("input[name='radJoinMoney']:checked").val();
+            let car = $("input[name='radIsCar']:checked").val();
+            if (name === '') {
+                $("#divTip").html("请输入姓名！");
+                $('#myModal').modal('show')
+                return;
+            }
+            if (area === '') {
+                $("#divTip").html("请输入加盟区域！");
+                $('#myModal').modal('show')
+                return;
+            }
+            if (phone === '') {
+                $("#divTip").html("请输入手机号码！");
+                $('#myModal').modal('show')
+                return;
+            }
+            console.log({
+                name: name, arae: area, phone: phone, type: type, shop: shop, money: money, car: car
+            });
+        }
+        $(function () {
+            $(".problem-ul .problem-li").click(function () {
+                $(".problem-ul").hide();
+                $(".problem-content").show();
+            });
+            $(".problem-content .title").click(function () {
+                $(".problem-ul").show();
+                $(".problem-content").hide();
+            });
+        });
+    </script>
+</body>
+</html>

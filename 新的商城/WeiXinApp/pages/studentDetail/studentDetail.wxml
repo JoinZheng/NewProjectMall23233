@@ -1,0 +1,60 @@
+<view class="header">
+  <van-row>
+    <van-col span="7">
+      <van-image width="200rpx" height="200rpx" src="../../../../assets/images/head.jpg"></van-image>
+    </van-col>
+    <van-col span="17">
+      <view class="name">姓名：人见人爱</view>
+      <view class="name">个人标签：
+      </view>
+      <view>
+        <van-tag color="#3981F4" round size="medium">同学会主席</van-tag>
+        <van-tag color="#3981F4" round size="medium">组织会主席</van-tag>
+        <van-tag color="#3981F4" round size="medium">科技主席</van-tag>
+      </view>
+    </van-col>
+  </van-row>
+</view>
+<view class="userInfo">
+  <view class="title">
+    <image src="../../assets/images/user1.png"></image>
+    <text>联系方式</text>
+  </view>
+  <van-row class="title">
+    <van-col span="12">手机号码：13879288323</van-col>
+    <van-col span="12">微信号：vchart</van-col>
+    <van-col span="12">邮箱：3501822@qq.com</van-col>
+  </van-row>
+</view>
+<view class="userInfo">
+  <view class="title">
+    <image src="../../assets/images/user3.png"></image>
+    <text>涉及行业</text>
+  </view>
+  <view>
+    <van-tag color="#3981F4" round size="medium">餐饮</van-tag>
+    <van-tag color="#3981F4" round size="medium">软件</van-tag>
+  </view>
+</view>
+<view class="userInfo">
+  <view class="title">
+    <image src="../../assets/images/user2.png"></image>
+    <text>已加入圈子</text>
+  </view>
+  <view>
+    <van-tag color="#3981F4" round size="medium">区域委员会</van-tag>
+    <van-tag color="#3981F4" round size="medium">行业委员会</van-tag>
+  </view>
+</view>
+<view class="userInfo">
+  <view class="title">
+    <image src="../../assets/images/user.png"></image>
+    <text>个人简历</text>
+  </view>
+  <view>
+    忌硬套格式 安排结构、运用笔墨应遵循古人所说“定体则无，大体须有”的原则才是。也就是说，既要考虑一般规律，又要结合自身实际来确立重点、谋篇布局、组织材料，绝不可死搬硬套。
+  </view>
+</view>
+<view class="userInfo">
+  <van-button color="#3981F4" size="large">添加同学录</van-button>
+</view>

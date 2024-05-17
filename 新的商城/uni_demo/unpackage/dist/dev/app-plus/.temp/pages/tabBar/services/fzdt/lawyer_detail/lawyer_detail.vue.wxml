@@ -1,0 +1,74 @@
+<import src="/components/uni-tag.vue.wxml" />
+<template name="1f0617cd">
+  <view style="background-color:#efeff4;padding: 15rpx;" class="_view data-v-9f03d534">
+    <view class="_view data-v-9f03d534" style="width: 100%;text-align: center;">
+      <image src="{{details.icon}}" mode style="height: 80px;width: 80px;border-radius: 40px;" class="_image data-v-9f03d534"></image>
+    </view>
+    <view class="_view data-v-9f03d534" style="text-align: center;color: #586C94;">{{details.name}}
+      <template type="primary" size="small" data="{{...$root['0'], ...$root[$kk+'c3K-0'],$root}}" is="44780808"></template>
+    </view>
+    <view class="_view data-v-9f03d534" style="text-align: center;color: #586C94;">执业机构:
+      <text class="_text data-v-9f03d534">{{details.organizationName}}</text>
+    </view>
+    <view class="_view data-v-9f03d534 uni-grid-9 uni-common-mt">
+      <view class="_view data-v-9f03d534 uni-grid-9-item">
+        <text class="_text data-v-9f03d534 uni-grid-9-text" style="color: #61A1F1;">{{details.consultNumber}}</text>
+        <text class="_text data-v-9f03d534 uni-grid-9-text">服务人次</text>
+      </view>
+      <view class="_view data-v-9f03d534 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <text class="_text data-v-9f03d534 uni-grid-9-text" style="color: #61A1F1;">{{details.degree}}</text>
+        <text class="_text data-v-9f03d534 uni-grid-9-text">好评率</text>
+      </view>
+      <view class="_view data-v-9f03d534 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <text class="_text data-v-9f03d534 uni-grid-9-text" style="color: #61A1F1;">{{details.phone}}</text>
+        <text class="_text data-v-9f03d534 uni-grid-9-text">服务电话</text>
+      </view>
+    </view>
+    <view class="_view data-v-9f03d534 uni-card">
+      <view class="_view data-v-9f03d534 uni-card-header">基本信息</view>
+      <view class="_view data-v-9f03d534 uni-card-content">
+        <view class="_view data-v-9f03d534 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-9f03d534 uni-list-cell-navigate"> 性别
+            <text class="_text data-v-9f03d534">{{sex}}</text>
+          </view>
+        </view>
+        <view class="_view data-v-9f03d534 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-9f03d534 uni-list-cell-navigate"> 民族
+            <text class="_text data-v-9f03d534">{{nation}}</text>
+          </view>
+        </view>
+        <view class="_view data-v-9f03d534 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-9f03d534 uni-list-cell-navigate"> 学历
+            <text class="_text data-v-9f03d534">{{education}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-9f03d534 uni-card">
+      <view class="_view data-v-9f03d534 uni-card-header">执业信息</view>
+      <view class="_view data-v-9f03d534 uni-card-content">
+        <view class="_view data-v-9f03d534 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-9f03d534 uni-list-cell-navigate"> 执业证号
+            <text class="_text data-v-9f03d534">{{practiceNo}}</text>
+          </view>
+        </view>
+        <view class="_view data-v-9f03d534 uni-list-cell">
+          <view class="_view data-v-9f03d534 uni-list-cell-navigate"> 执业机构
+            <text class="_text data-v-9f03d534">{{organizationName}}</text>
+          </view>
+        </view>
+        <view class="_view data-v-9f03d534 uni-list-cell">
+          <view class="_view data-v-9f03d534 uni-list-cell-navigate"> 执业证获得时间
+            <text class="_text data-v-9f03d534">{{issueDate}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-9f03d534 uni-card">
+      <view class="_view data-v-9f03d534 uni-card-header">业务领域</view>
+      <view class="_view data-v-9f03d534 uni-card-content">
+        <view class="_view data-v-9f03d534 uni-card-content-inner"></view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "法律人员",
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag"
+  }
+}

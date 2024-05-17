@@ -1,0 +1,18 @@
+<template name="46e95b12">
+  <view class="_view data-v-2d53ce65 content">
+    <view class="_view data-v-2d53ce65 input-group">
+      <view class="_view data-v-2d53ce65 input-row border">
+        <text class="_text data-v-2d53ce65 title">账号：</text>
+        <input type="number" value="{{phone}}" bindinput="handleProxy" placeholder="请输入手机号" data-eventid="{{'S34-0'}}" data-comkey="{{$k}}" class="_input data-v-2d53ce65" />
+      </view>
+      <view class="_view data-v-2d53ce65 input-row">
+        <text class="_text data-v-2d53ce65 title">验证码：</text>
+        <input class="_input data-v-2d53ce65 code" type="number" value="{{code}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'db2-1'}}" data-comkey="{{$k}}" />
+        <button class="_button data-v-2d53ce65 btn_code" size="mini" type="primary" plain="true" bindtap="handleProxy" data-eventid="{{'hq2-2'}}" data-comkey="{{$k}}">{{ text }}</button>
+      </view>
+    </view>
+    <view class="_view data-v-2d53ce65 btn-row">
+      <button type="primary" class="_button data-v-2d53ce65 primary" bindtap="handleProxy" data-eventid="{{'B6u-3'}}" data-comkey="{{$k}}">登录</button>
+    </view>
+  </view>
+</template>

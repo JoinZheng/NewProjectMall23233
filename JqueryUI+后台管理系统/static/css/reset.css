@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*
+* 作者：Poya QQ：931989338
+* 购买: 定制模板、主题
+* 讨论群：149663025
+* 公众平台：SoSoIT
+* 微信号：SoSoIT-Center（加我请说明来意）
+* title:后台系统UI框架;
+* 店铺地址：https://shop155629335.taobao.com/?spm=a230r.7195193.1997079397.2.diL9ud
+* 广告：本人承接各类大中小型管理系统的软件设计与前端开发、主题开发，
+* 有需要的朋友联系我啦~~~~
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {height:100%;padding:0px;}
+body,ul,p{margin:0;padding:0;}
+body{font-size:13px; position:relative; min-height:600px; font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; height:100%;}
+li{list-style:none;}
+body,ul{margin:0;padding:0}
+li{list-style:none}
+a{text-decoration:none;}
+h1,h2,h3 { font-weight:normal; margin:0;}
+a,a:visited{text-decoration:none; color:#fff;}
+*:focus {outline: none;}
+.mt5 { margin-top:5px;}
+.mt15 { margin-top:15px;}
+.mr5 { margin-right:5px;}
+.mr15 { margin-right:15px;}
+.mt20 { margin-top:20px;}
+.mt30 { margin-top:30px;}
+.mb10 { margin-bottom:10px;}
+.pt20 { padding-top:20px;}
+.pt30 { padding-top:30px;}
+.l { float:left;}
+.r { float:right;}
+h2 { font-size:16px; line-height:42px; height:40px; padding-left:15px;position:relative;}
+h3 { font-size:14px; border-bottom:rgba(5,146,252,0.2) 1px solid; line-height:32px; padding-left:15px; color:#d5f2ff;}
+
+

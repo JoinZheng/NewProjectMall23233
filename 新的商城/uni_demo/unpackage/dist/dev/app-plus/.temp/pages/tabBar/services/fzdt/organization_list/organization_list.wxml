@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/services/fzdt/organization_list/organization_list.vue.wxml" /><template is="b2c1906e" data="{{ ...$root['0'], $root }}"/>

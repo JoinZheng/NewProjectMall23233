@@ -1,0 +1,46 @@
+page {
+  background-color: #3981F4;
+}
+
+.userInfo {
+  margin-top: 120rpx;
+  color: #ffffff;
+}
+
+.userInfo .userinfo-avatar {
+  margin: 0 20rpx 40rpx 30rpx;
+}
+
+.userInfo .nickname {
+  margin: 10rpx 20rpx 0 20rpx;
+}
+
+.userInfo .subtitle {
+  font-size: 18rpx;
+  margin: 10rpx 0 0 20rpx;
+}
+
+.gridHead {
+  height: 40rpx;
+  background-color: #fff;
+  border-radius: 30rpx 30rpx 0 0;
+}
+
+.gridImg text {
+  margin-top: 10rpx;
+  font-size: 20rpx;
+}
+
+.userPower {
+  background-color: #fff;
+  border-top: 20rpx solid #e8ebf1;
+  padding: 30rpx;
+}
+
+.userPower .info {
+  padding: 30rpx;
+  background-color: #e6da70;
+  border: 1rpx solid #1e428c;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}

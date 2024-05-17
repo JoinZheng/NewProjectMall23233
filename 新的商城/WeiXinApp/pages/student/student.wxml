@@ -1,0 +1,90 @@
+<van-search placeholder="请输入搜索关键词" use-action-slot shape="round" bind:search="onSearch">
+  <view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+
+<van-tabs bind:change="onChange">
+  <van-tab title="同学录">
+  </van-tab>
+  <van-tab title="圈子">
+  </van-tab>
+  <van-tab title="∨按行业"></van-tab>
+</van-tabs>
+<view>
+  <van-index-bar>
+    <van-index-anchor index="A" />
+    <view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" bindtap="studentJump" wx:key="list">
+      <van-row>
+        <van-col span="4">
+          <image src="{{item.imagePath}}"></image>
+        </van-col>
+        <van-col span="20">
+          <view class="text">姓名：{{item.name}} <text class="sex">♂</text></view>
+          <view class="text">联系方式：{{item.telephone}} </view>
+          <view class="text">{{item.industryName}}：
+            <van-tag color="#3981F4" round size="medium">{{item.industry}}</van-tag>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+    <van-index-anchor index="B" />
+    <view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" bindtap="studentJump" wx:key="list">
+      <van-row>
+        <van-col span="4">
+          <image src="{{item.imagePath}}"></image>
+        </van-col>
+        <van-col span="20">
+          <view class="text">姓名：{{item.name}} <text class="sex">♀</text></view>
+          <view class="text">联系方式：{{item.telephone}} </view>
+          <view class="text">{{item.industryName}}：
+            <van-tag color="#3981F4" round size="medium">{{item.industry}}</van-tag>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+    <van-index-anchor index="C" />
+    <view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" bindtap="studentJump" wx:key="list">
+      <van-row>
+        <van-col span="4">
+          <image src="{{item.imagePath}}"></image>
+        </van-col>
+        <van-col span="20">
+          <view class="text">姓名：{{item.name}} <text class="sex">♀</text></view>
+          <view class="text">联系方式：{{item.telephone}} </view>
+          <view class="text">{{item.industryName}}：
+            <van-tag color="#3981F4" round size="medium">{{item.industry}}</van-tag>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+    <van-index-anchor index="D" />
+    <view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" bindtap="studentJump" wx:key="list">
+      <van-row>
+        <van-col span="4">
+          <image src="{{item.imagePath}}"></image>
+        </van-col>
+        <van-col span="20">
+          <view class="text">姓名：{{item.name}} <text class="sex">♀</text></view>
+          <view class="text">联系方式：{{item.telephone}} </view>
+          <view class="text">{{item.industryName}}：
+            <van-tag color="#3981F4" round size="medium">{{item.industry}}</van-tag>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+    <van-index-anchor index="E" />
+    <view class="dataItem" wx:for="{{dataList}}" data-id="{{index}}" bindtap="studentJump" wx:key="list">
+      <van-row>
+        <van-col span="4">
+          <image src="{{item.imagePath}}"></image>
+        </van-col>
+        <van-col span="20">
+          <view class="text">姓名：{{item.name}} <text class="sex">♀</text></view>
+          <view class="text">联系方式：{{item.telephone}} </view>
+          <view class="text">{{item.industryName}}：
+            <van-tag color="#3981F4" round size="medium">{{item.industry}}</van-tag>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+  </van-index-bar>
+</view>

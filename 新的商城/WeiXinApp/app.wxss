@@ -1,0 +1,48 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+page {
+  color: #353535;
+}
+
+.dataEmpty {
+  height: 40rpx;
+}
+
+.left {
+  float: left;
+}
+
+.bottomHeight {
+  height: 200rpx;
+}
+
+/*===================圈子样式==============*/
+.dataItem {
+  padding: 10rpx;
+}
+
+.dataItem image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+
+.dataItem .text {
+  margin: 0rpx 0rpx 10rpx 20rpx;
+  font-size: 26rpx;
+}
+
+.dataItem .sex {
+  color: #3981F4;
+  padding-top: 10rpx;
+  font-weight: 900;
+}

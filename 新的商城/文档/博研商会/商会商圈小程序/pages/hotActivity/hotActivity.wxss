@@ -1,0 +1,15 @@
+.dataItem {
+  margin: 30rpx 20rpx 0 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #cdcdcd;
+  font-size: 26rpx;
+}
+
+.dataItem .text {
+  margin-bottom: 28rpx;
+}
+
+.dataItem image {
+  width: 140rpx;
+  height: 140rpx;
+}

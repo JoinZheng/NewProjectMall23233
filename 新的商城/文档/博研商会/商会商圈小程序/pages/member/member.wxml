@@ -1,0 +1,11 @@
+<van-cell-group>
+  <van-field value="{{ circleName }}" label="圈子名：" placeholder="请输入名称" bind:change="onChange" />
+  <van-field value="{{ circleInfo }}" autosize custom-style="height:200rpx" maxlength="100" rows="10" label="介绍" type="textarea" placeholder="请输入介绍" />
+  <van-button color="#B81B22" size="large">添加圈子</van-button>
+</van-cell-group>
+<!-- <van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
+  <van-tabbar-item icon="search">标签</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
+  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+</van-tabbar> -->

@@ -1,0 +1,60 @@
+<view class="userInfo">
+  <van-row>
+    <van-col span="6">
+      <view class="userinfo-avatar">
+        <van-image round width="140rpx" height="140rpx" src="../../../../assets/images/head1.png" />
+      </view>
+    </van-col>
+    <van-col span="18">
+      <view class="nickname"><text>用户名</text></view>
+      <view class="subtitle">欢迎使用工业服务网平台</view>
+    </van-col>
+  </van-row>
+</view>
+
+<view class="gridHead"></view>
+<van-grid border="{{false}}" column-num="3" class="gridImg">
+  <van-grid-item use-slot url="/pages/index/index">
+    <van-image round width="120rpx" height="120rpx" src="../../../../assets/images/head.jpg" />
+    <text>帐号设置</text>
+  </van-grid-item>
+  <van-grid-item use-slot url="/pages/index/index">
+    <van-image round width="120rpx" height="120rpx" src="../../../../assets/images/head.jpg" />
+    <text>政策收藏</text>
+  </van-grid-item>
+  <van-grid-item use-slot url="/pages/index/index">
+    <van-image round width="120rpx" height="120rpx" src="../../../../assets/images/head.jpg" />
+    <text>信息通知</text>
+  </van-grid-item>
+</van-grid>
+
+<view class="userPower">
+  <text>您已经成为个人用户</text>
+  <view class="info">
+    <van-row>
+      <van-col span="23">
+        <van-icon name="gold-coin" color="#1989fa"></van-icon>
+        <text>了解客户权利</text>
+      </van-col>
+      <van-col span="1">
+        <van-icon name="arrow" color="#1989fa"></van-icon>
+      </van-col>
+    </van-row>
+  </view>
+</view>
+<van-cell-group inset>
+  <van-cell>
+    <van-dropdown-menu>
+      <van-dropdown-item options="{{option1}}"></van-dropdown-item>
+      <van-dropdown-item options="{{option1}}"></van-dropdown-item>
+      <van-dropdown-item options="{{option1}}"></van-dropdown-item>
+    </van-dropdown-menu>
+  </van-cell>
+  <van-cell title="认证信息" data-id="1" bindtap="pageJump" icon="friends-o" is-link>
+    <van-icon name="info" color="#1989fa"></van-icon>暂末认证
+  </van-cell>
+  <van-cell title="联系我们" data-id="2" bindtap="pageJump" icon="phone-o" is-link>
+  </van-cell>
+  <van-cell title="关于我们" data-id="3" bindtap="pageJump" icon="user-circle-o" is-link>
+  </van-cell>
+</van-cell-group>

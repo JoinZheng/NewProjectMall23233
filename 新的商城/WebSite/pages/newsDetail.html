@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>新联详情</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--要求当前网页使用IE浏览器最高版本的内核来渲染-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!--视口的设置：视口的宽度和设备一致，默认的缩放比例和PC端一致，用户不能自行缩放-->
+    <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link href="../images/favicon32.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="../jqueryplus/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../jqueryplus/mainJS.js" charset="utf-8"></script>
+    <script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .wrap .up .TopMenu .title .tab .tab-item a {
+            color: #000;
+            font-size: 14px;
+        }
+
+        .wrap .up {
+            position: page;
+            width: 100%;
+            height: 4rem;
+        }
+
+        .news-detail {
+            padding-top: 4rem;
+        }
+
+        .news-detail-wrap {
+            padding: 0 18.5rem 3.6rem;
+        }
+
+        .news-detail-tab {
+            margin: 1.3rem 0 1.25rem;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -moz-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+            .news-detail-tab .iconfont {
+                margin: 0 0.8rem;
+                font-size: .65rem;
+            }
+
+            .news-detail-tab a {
+                color: #000;
+            }
+
+        .news-detail-content-title {
+            margin: 1.6rem 2.4rem 2.4rem;
+            text-align: center;
+            color: #050912;
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+
+        .news-detail-content-text {
+            white-space: break-spaces;
+            font-size: .8rem;
+            font-weight: 400;
+            line-height: 0.8rem;
+            color: #4b5466;
+        }
+
+        .news-content {
+            line-height: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!--滚动标题-->
+    <div class="wrap">
+        <div class="up">
+            <div class="TopMenu">
+                <div class="title">
+                    <div class="name" style="margin-right:17rem;">
+                        <div class="name_text" style="background: url(../images/logo-red.png) no-repeat !important; background-size: 100% 100% !important; "></div>
+                    </div>
+                    <div class="tab">
+                        <div class="tab-item">
+                            <a href="../index.html">首页</a>
+                        </div>
+                        <div class="tab-item">
+                            <div class="dropdown">
+                                <a href="tuhuaboutus.html" class="dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">关于我们</a>
+                                <ul class="dropdown-menu" style="top:68%;left:-48px;" role="menu" aria-labelledby="dropdownMenu">
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="tuhuaboutus.html#introduction">公司概况</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="tuhuaboutus.html#culture">公司文化</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="tuhuaboutus.html#team-manage">管理团队</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="tuhuaboutus.html#process">发展历程</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="tuhuaboutus.html#honor">公司荣誉</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <a href="business.html">业务介绍</a>
+                        </div>
+                        <div class="tab-item">
+                            <a href="news.html" class="active">新闻中心</a>
+                        </div>
+                        <div class="tab-item">
+                            <div class="dropdown">
+                                <a href="contactus.html" class="dropdown-toggle" id="dropdownMenuUs" data-toggle="dropdown">联系我们</a>
+                                <ul class="dropdown-menu" style="top:68%;left:-48px;" role="menu" aria-labelledby="dropdownMenuUs">
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" href="contactus.html">办公地点</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" class="menu-a" tabindex="-1" target="_blank" href="workShop.html">合作加盟</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-item" style="padding-left: 1.5rem;">
+                            <div id="divCn" style="display: inline-block;" onclick="textChange('cn')">
+                                <a>简</a>
+                            </div>
+                            <span class="line-a"> / </span>
+                            <div id="divCf" class="langText" style="display: inline-block;" onclick="textChange('cf')">
+                                繁
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--新闻内容-->
+        <div class="news-detail">
+            <div class="news-detail-wrap">
+                <div class="news-detail-tab">
+                    <span class="news-detail-tab-title"><a href="news.html">新闻中心</a></span>
+                    <span class="iconfont glyphicon glyphicon-chevron-right"></span>
+                    <span class="news-detail-tab-title">文章详情</span>
+                </div>
+                <div class="news-detail-content">
+                    <div class="news-detail-content-title">途虎养车参与制定 中国首部新能源汽车维修职业标准发布</div>
+                    <div class="news-detail-content-text">
+                        <p class="news-content">为助力新能源汽车维修技术人员专业技能提升，《新能源汽车维修职业技能评价规范》团体标准（以下<a>简</a>称《规范》）于近日发布，并将在7月15日正式实施。</p>
+                        <p class="news-content">《规范》为中国首部新能源汽车维修技术人员职业技能评价标准，由中国汽车维修行业协会牵头，途虎养车联合北京汇智慧众汽车技术研究院 、比亚迪、国家开放大学等科研院所、行业龙头企业共同制定。</p>
+                        <p class="news-content">作为汽车后服务市场第一家加入中国电动汽车百人会的企业，途虎养车第三次参与制定新能源汽车相关标准，此前参与制定的我国首部新能源车售后服务规范以及首部在用新能源车安全检验规范，已相继发布并实施。</p>
+                        <div class="img-wrap">
+                            <img src="https://img1.tuhu.org/orgrimmar/9842/WQEfBtCyCMvklciQTKAo3g_w1386_h994.png">
+                        </div>
+                        <h4>从售后服务到安全检验规范，已参与多项国家新能源标准制定</h4>
+                        <p class="news-content">作为业内最早启动新能源业务转型升级的企业之一，途虎养车通过与产业链上下游协同、“油电兼修”能力建设等形式，已落地多项新能源汽车服务，包括与新能源汽车相关的轮胎、美容、改装、保养等项目，与三电系统相关的动力电池和新能源充电桩专修等项目。</p>
+                        <p class="news-content">同时，途虎养车积极参与到多项新能源汽车售后标准的制定中，包括旨在有效规范新能源车厂商售后服务行为、提升售后服务能力和服务水平以及用户体验的《电动乘用车售后服务规范》，以及针对新能源汽车三电专有特性制定涉电项目检验标准和快速检验方案的《在用新能源乘用车安全检验规范》。</p>
+                        <p class="news-content">基于在燃油车时代积累的经验和优势，途虎养车持续在标准化和智慧门店建设等方面贡献“途虎力量”。</p>
+                        <h4>领跑新能源售后人才职业领域，发力多元培养路径</h4>
+                        <p class="news-content">要把标准化服务执行到位，人才最为关键。而由于使用操作、结构组成、原理性能和检测维修方法与传统燃油车不同，新能源汽车对于维修技术人员专业技能要求极高，当前能够安全高效展开诊断维修且成功交付的技师较为稀缺。</p>
+                        <p class="news-content">在此次《规范》制定过程中，途虎养车新能源专家组多次参加相关研讨会，分享人才培养经验。考虑到新能源汽车市场的细分和专业性，途虎养车曾创新提出人才多元化培养路径，并按照技能水平制定初级、中级、高级三个级别，为机修师傅向新能源技师转化提供可靠支撑。</p>
+                        <p class="news-content">途虎养车人才培养理念与《规范》高度契合。《规范》规定新能源汽车维修技术人员的职业技能等级、基本要求、专业能力以及评价要求，其中初级维护技师和中级维修技师应分别掌握维护保养作业、部件拆装及更换技术等技能，高级诊断技师则要具备故障排查及诊断并提出维修方案的能力。</p>
+                        <div class="img-wrap">
+                            <img src="https://img4.tuhu.org/orgrimmar/6802/Q3Nx5ZR0rUOiVu6wMAbSfA_w1080_h659.png">
+                        </div>
+                        <p class="news-content">数据显示，在途虎养车，通过新能源汽车维护保养培训和考试的技师已经有5000余人，通过新能源汽车动力电池维修的培训和带教的技师也有400余人。途虎养车相关负责人表示，未来途虎养车将加强新能源汽车维保和三电维修的技术储备，在《规范》的指引下继续做好新能源专业技能人才培养，用优质服务满足新能源车主的养车用车需求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--友情链接-->
+        <div class="bottom-link">
+            <div class="first-line">
+                <div>
+                    <div>
+                        <span class="name">友情链接:</span>
+                        <a target="_self" href="https://hjxt.cca.cn/" class="item">中国消费者协会和解监督平台</a>
+                        <a target="_self" href="https://51gt3.com/" class="item">51GT3二手赛车交易</a>
+                        <a target="_self" href="https://test.smzdm.com/" class="item">消费众测</a>
+                        <a target="_self" href="https://car.tuhu.cn/" class="item">二手车交易</a>
+                        <a target="_self" href="https://db.auto.sina.com.cn/photo/" class="item">汽车图片</a>
+                        <a target="_self" href="http://shanghai.liebiao.com/shenghuo/" class="item">上海生活服务</a>
+                        <a target="_self" href="http://www.gaotie.cn/dingpiao/" class="item">铁路网上订票官网</a>
+                        <a target="_self" href="https://car.tom.com/" class="item">TOM汽车</a>
+                        <a target="_self" href="https://www.hupu.com/" class="item">虎扑网</a>
+                        <a target="_self" href="https://shanghai.baixing.com/" class="item">百姓网</a>
+                        <a target="_self" href="https://www.xcar.com.cn/" class="item">爱卡汽车</a>
+                    </div>
+                    <div>
+                        <a target="_self" href="https://www.pcauto.com.cn/" class="item">太平洋汽车网</a>
+                        <a target="_self" href="https://www.yiche.com/" class="item">易车网</a>
+                        <a target="_self" href="https://auto.sohu.com/" class="item">搜狐汽车</a>
+                        <a target="_self" href="https://auto.163.com/" class="item">网易汽车</a>
+                        <a target="_self" href="https://db.auto.sina.com.cn/" class="item">新浪汽车</a>
+                        <a target="_self" href="https://new.qq.com/ch/auto/" class="item">腾讯汽车</a>
+                        <a target="_self" href="https://www.ftwheels.cn/" class="item">丰途轮毂</a>
+                        <a target="_self" href="https://www.qipeilong.cn/Parties/html/" class="item">汽配龙</a>
+                        <a target="_self" href="https://www.dongchedi.com/" class="item">懂车帝</a>
+                        <a target="_self" href="https://www.chooseauto.com.cn/" class="item">选车网</a>
+                    </div>
+                </div>
+            </div>
+            <div class="second-line">
+                <span class="item"><span>©️ 2007-2023 Tuhu.cn Corporation，All Rights Reserved 上海阑途信息技术有限公司 版权所有</span></span>
+                <span class="item"><span>地址：上海市闵行区宜山路1999号24幢8F</span></span>
+                <span class="item"><a target="_blank" href="javascript:void()">合作加盟</a></span>
+            </div>
+            <div class="third-line">
+                <span class="item"><a target="_blank" href="https://beian.miit.gov.cn/">沪ICP备17032489号-3</a></span>
+                <span class="item"><a target="_blank" href="/home/license">营业执照</a></span>
+                <span class="item"><a target="_blank" href="javascript:void()">隐私政策</a></span>
+                <span class="item"><a target="_blank" href="javascript:void()">沪公网安备 31011202001045号</a></span>
+                <span class="item"><span>增值电信业务经营许可：沪通信管自贸[2022]7号</span></span>
+            </div>
+            <div class="last-line">
+                <span class="item">
+                    加盟客服热线：952688
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".TopMenu .title").off();
+        });
+    </script>
+</body>
+</html>

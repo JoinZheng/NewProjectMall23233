@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/services/fzdt/lawyer_detail/lawyer_detail.vue.wxml" /><template is="1f0617cd" data="{{ ...$root['0'], $root }}"/>

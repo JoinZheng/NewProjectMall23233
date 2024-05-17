@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/consult/consult.vue.wxml" /><template is="1ef77247" data="{{ ...$root['0'], $root }}"/>

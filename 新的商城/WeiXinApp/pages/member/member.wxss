@@ -1,0 +1,10 @@
+.imgBar {
+  width: 30px;
+  height: 18px;
+}
+
+.imgAddBar {
+  width: 40px;
+  height: 40px;
+  margin-top: -90px;
+}

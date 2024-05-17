@@ -1,0 +1,34 @@
+<import src="/components/uni-tag.vue.wxml" />
+<template name="b2c1906e">
+  <view style="background-color:#efeff4 ;" class="_view data-v-853b4a3c">
+    <view class="_view data-v-853b4a3c uni-list" wx:key="key" key="{{key}}" bindtap="handleProxy" style="margin-top: 20rpx;" data-eventid="{{'NJm-0-'+key}}" data-comkey="{{$k}}" wx:for="{{listData}}" wx:for-index="key" wx:for-item="value">
+      <view class="_view data-v-853b4a3c uni-list-cell" hover-class="uni-list-cell-hover" style="margin-top: 10rpx;">
+        <view class="_view data-v-853b4a3c uni-media-list">
+          <view class="_view data-v-853b4a3c uni-media-list-logo">
+            <image src="{{value.icon}}" class="_image data-v-853b4a3c"></image>
+          </view>
+          <view class="_view data-v-853b4a3c uni-media-list-body">
+            <view class="_view data-v-853b4a3c uni-media-list-text-top">{{value.name}}
+              <template type="primary" size="small" data="{{...$root['0'], ...$root[$kk+'a5q-0-'+key],$root}}" is="44780808"></template>
+            </view>
+            <view class="_view data-v-853b4a3c uni-media-list-text-bottom uni-ellipsis">{{value.organizationName}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-853b4a3c uni-grid-9 uni-common-mt">
+        <view class="_view data-v-853b4a3c uni-grid-9-item">
+          <text class="_text data-v-853b4a3c uni-grid-9-text" style="color: #61A1F1;">{{value.consultNumber}}</text>
+          <text class="_text data-v-853b4a3c uni-grid-9-text">服务人次</text>
+        </view>
+        <view class="_view data-v-853b4a3c uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+          <text class="_text data-v-853b4a3c uni-grid-9-text" style="color: #61A1F1;">{{value.degree}}</text>
+          <text class="_text data-v-853b4a3c uni-grid-9-text">好评率</text>
+        </view>
+        <view class="_view data-v-853b4a3c uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+          <text class="_text data-v-853b4a3c uni-grid-9-text" style="color: #61A1F1;">{{value.phone}}</text>
+          <text class="_text data-v-853b4a3c uni-grid-9-text">服务电话</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

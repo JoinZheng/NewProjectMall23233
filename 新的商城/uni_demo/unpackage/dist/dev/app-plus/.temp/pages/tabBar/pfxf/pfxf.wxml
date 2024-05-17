@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/pfxf/pfxf.vue.wxml" /><template is="fbd7ed32" data="{{ ...$root['0'], $root }}"/>

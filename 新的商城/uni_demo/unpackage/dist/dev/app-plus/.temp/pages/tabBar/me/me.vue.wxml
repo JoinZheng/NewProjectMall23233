@@ -1,0 +1,27 @@
+<import src="/components/uni-badge.vue.wxml" />
+<template name="0d951c67">
+  <view class="_view data-v-5ccadce6">
+    <view class="_view data-v-5ccadce6 uni-flex uni-row" style="height: 150rpx;background-color: #61A1F1;">
+      <view class="_view data-v-5ccadce6" style="width: 70%;color: #FFFFFF;margin-top: 25rpx;margin-left: 60rpx;font-size: 40rpx;">游客</view>
+      <image src="../../../static/60x60.png" style="height: 120rpx;width: 120rpx;border-radius: 50%;" mode class="_image data-v-5ccadce6"></image>
+    </view>
+    <view class="_view data-v-5ccadce6 uni-card">
+      <view class="_view data-v-5ccadce6 uni-list">
+        <view class="_view data-v-5ccadce6 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-5ccadce6 uni-list-cell-navigate uni-navigate-right uni-navigate-badge"> 我的咨询
+            <template text="123" type="success" data="{{...$root['0'], ...$root[$kk+'ECA-0'],$root}}" is="5b485a11"></template>
+          </view>
+        </view>
+        <view class="_view data-v-5ccadce6 uni-list-cell uni-list-cell-last" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-5ccadce6 uni-list-cell-navigate uni-navigate-right uni-navigate-badge"> 我的申请
+            <template text="12" type="primary" data="{{...$root['0'], ...$root[$kk+'fLp-1'],$root}}" is="5b485a11"></template>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-5ccadce6 btn-row">
+      <button wx:if="{{!hasLogin}}" type="primary" class="_button data-v-5ccadce6 primary" bindtap="handleProxy" data-eventid="{{'fvg-0'}}" data-comkey="{{$k}}">登录</button>
+      <button wx:if="{{hasLogin}}" type="default" bindtap="handleProxy" data-eventid="{{'h2j-1'}}" data-comkey="{{$k}}" class="_button data-v-5ccadce6">退出登录</button>
+    </view>
+  </view>
+</template>

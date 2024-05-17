@@ -1,0 +1,62 @@
+<template name="713fc3a7">
+  <view class="_view data-v-6ac0c7e6">
+    <view class="_view data-v-6ac0c7e6 uni-center" style="background-color:#61A1F1 ;">
+      <image class="_image data-v-6ac0c7e6 image" style="width: 100%;height: 320rpx;" src="../../../static/service_bg.png"></image>
+      <view class="_view data-v-6ac0c7e6 title">法制地图</view>
+      <view class="_view data-v-6ac0c7e6 title1">法律服务机构及人员查询</view>
+      <button class="_button data-v-6ac0c7e6 title2" bindtap="handleProxy" size="mini" data-eventid="{{'3Md-0'}}" data-comkey="{{$k}}">点击搜索</button>
+    </view>
+    <view class="_view data-v-6ac0c7e6 uni-list-cell-divider"> 法律服务 </view>
+    <view class="_view data-v-6ac0c7e6 uni-grid-9 uni-common-mt">
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_ls.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">律师服务</text>
+      </view>
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_sj.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">司鉴服务</text>
+      </view>
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_rmtj.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">人民调解</text>
+      </view>
+    </view>
+    <view class="_view data-v-6ac0c7e6 uni-list-cell-divider"> 法援服务 </view>
+    <view class="_view data-v-6ac0c7e6 uni-grid-9 uni-common-mt">
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_flyz.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">在线预申请</text>
+      </view>
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_fyjd.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">进度查询</text>
+      </view>
+    </view>
+    <view class="_view data-v-6ac0c7e6 uni-list-cell-divider"> 司法考试 </view>
+    <view class="_view data-v-6ac0c7e6 uni-grid-9 uni-common-mt">
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_cj.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">成绩查询</text>
+      </view>
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_zkz.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">准考证查询</text>
+      </view>
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_zgz.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">资格证查询</text>
+      </view>
+    </view>
+    <view class="_view data-v-6ac0c7e6 uni-list-cell-divider"> 公证服务 </view>
+    <view class="_view data-v-6ac0c7e6 uni-grid-9 uni-common-mt">
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_gz.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">在线预申请</text>
+      </view>
+      <view class="_view data-v-6ac0c7e6 uni-grid-9-item" hover-class="uni-grid-9-item-hover">
+        <image class="_image data-v-6ac0c7e6 uni-grid-9-image" src="../../../static/service_gz_jd.png"></image>
+        <text class="_text data-v-6ac0c7e6 uni-grid-9-text">进度查询</text>
+      </view>
+    </view>
+  </view>
+</template>

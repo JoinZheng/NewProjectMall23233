@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/student/student",
+    "pages/member/member",
+    "pages/studentDetail/studentDetail",
+    "pages/hotActivity/hotActivity",
+    "pages/addMember/add",
+    "pages/circleDetail/circleDetail",
+    "pages/canvas/canvasPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#B81B22",
+    "navigationBarTitleText": "博研同学录",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#353535",
+    "selectedColor": "#B81B22",
+    "position": "bottom",
+    "custom": false,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/images/tabBar/index.png",
+        "selectedIconPath": "/assets/images/tabBar/index_I.png"
+      },
+      {
+        "pagePath": "pages/student/student",
+        "text": "同学录",
+        "iconPath": "/assets/images/tabBar/student.png",
+        "selectedIconPath": "/assets/images/tabBar/student_I.png"
+      },
+      {
+        "pagePath": "pages/addMember/add",
+        "text": "",
+        "iconPath": "/assets/images/tabBar/jia.png",
+        "selectedIconPath": "/assets/images/tabBar/jia.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "加入委员会",
+        "iconPath": "/assets/images/tabBar/member.png",
+        "selectedIconPath": "/assets/images/tabBar/member_I.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/assets/images/tabBar/my.png",
+        "selectedIconPath": "/assets/images/tabBar/my_I.png"
+      }
+    ]
+  },
+  "style1": "v2",
+  "sitemapLocation": "sitemap.json"
+}

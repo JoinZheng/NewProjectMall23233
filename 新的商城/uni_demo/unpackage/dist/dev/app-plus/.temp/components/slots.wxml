@@ -1,0 +1,2 @@
+<import src="/components/uni-badge.vue.wxml" />
+<import src="/components/uni-tag.vue.wxml" />

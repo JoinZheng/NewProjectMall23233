@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+
+/*
+* 作者：Poya QQ：931989338
+* 购买: 定制模板、主题
+* 讨论群：149663025
+* 公众平台：SoSoIT
+* 微信号：SoSoIT-Center（加我请说明来意）
+* title:后台系统UI框架;
+* 店铺地址：https://shop155629335.taobao.com/?spm=a230r.7195193.1997079397.2.diL9ud
+* 广告：本人承接各类大中小型管理系统的软件设计与前端开发、主题开发，
+* 有需要的朋友联系我啦~~~~
+*/
+html,body{width:100%;height:100%}
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+.login{position:absolute;width:350px;border-radius:5px;height:450px;background:#fff;box-shadow:0 0 3px #333;top:50%;left:50%;margin-top:-250px;margin-left:-175px;transition:all 1s;-moz-transition:all 1s;-webkit-transition:all 1s;-o-transition:all 1s}
+.login .login-title{font-size:24px;margin-top:85px;padding-left:40px;box-sizing:border-box;color:#1e90ff;margin-bottom:50px}
+.login .login-row{width:100%;box-sizing:border-box;padding:0 40px;margin-bottom:30px;clear:both;display: inline-block;}
+.login .ipt-icon{width:30px;height:30px;float:left;margin-top:5px;text-align:center;}
+.login .ipt-icon i.iconfont{color:#333;font-size:24px;}
+.login-input{float:left;width:220px;height:35px;position:relative;}
+.login-input input{z-index:2;transition:all .5s;padding-left:10px;color:#333;width:100%;height:35px;border:0;border-bottom:1px solid #ccc;border-top:1px solid #fff;border-left:1px solid #fff;border-right:1px solid #fff;box-sizing:border-box;outline:none;position:relative}
+.login-input input:focus{border-width:0px 0px 1px 0px;border-style:solid;border-color:#1e90ff;}
+.login-text{background:#fff;padding:0 5px;position:absolute;z-index:0;opacity:0;height:20px;top:50%;margin-top:-10px;font-size:14px;left:5px;color:#1e90ff;line-height:20px;transition:all .5s;-moz-transition:all .5s;-webkit-transition:all .5s;-o-transition:all .5s}
+.login-input input:focus~.login-text{top:0;z-index:3;opacity:1;margin-top:-15px}
+.login-button{cursor:pointer;width:250px;text-align:center;height:40px;line-height:40px;border:0px;
+    background: linear-gradient(90deg,#33adff,#1a7af8);
+	border-radius:5px;margin:25px auto 0px;color:#fff;clear:both;display:block;
+}
+.login-button:hover{
+	background: linear-gradient(-45deg,  #23a6d5, #23d5ab, #ee7752, #e73c7e);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+
+
